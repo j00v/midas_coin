@@ -1,0 +1,26 @@
+[Unit]
+Description=Midas's distributed currency daemon
+After=network.target
+
+[Service]
+User=midas
+Group=midas
+
+Type=forking
+PIDFile=/var/lib/midasd/midasd.pid
+
+ExecStart=/usr/bin/midasd -daemon -pid=/var/lib/midasd/midasd.pid \
+          -conf=/etc/midas/midas.conf -datadir=/var/lib/midasd
+
+ExecStop=-/usr/bin/midas-cli -conf=/etc/midas/midas.conf \
+         -datadir=/var/lib/midasd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

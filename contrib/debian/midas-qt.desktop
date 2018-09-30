@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Midas
+Comment=Midas P2P Cryptocurrency
+Comment[fr]=Midas, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Midas, eşten eşe kriptografik sanal para birimi
+Exec=midas-qt %u
+Terminal=false
+Type=Application
+Icon=midas128
+MimeType=x-scheme-handler/midas;
+Categories=Office;Finance;
