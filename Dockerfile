@@ -2,6 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update && \
     apt-get --no-install-recommends --yes install \
+		curl \
          git \
          automake \
          build-essential \
@@ -29,13 +30,17 @@ WORKDIR /midas
 
 COPY . .
 
-RUN ./autogen.sh && \
-    ./configure && \
-    make && \
-    strip ./src/midasd && \
-    strip ./src/midas-cli && \
-    mv ./src/midasd /usr/local/bin/ && \
-    mv ./src/midas-cli /usr/local/bin/ && \
+RUN cd depends && \
+	make && \
+	make install && \
+	cd .. && \
+	./autogen.sh && \
+	./configure && \
+	make && \
+	strip ./midasd && \
+    strip ./midas-cli && \
+    mv ./midasd /usr/local/bin/ && \
+    mv ./midas-cli /usr/local/bin/ && \
     rm -rf /midas 
 
 VOLUME ["/root/.midas"]
