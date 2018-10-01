@@ -29,17 +29,14 @@ WORKDIR /midas
 
 COPY . .
 
-RUN ./autogen.sh && \
-    ./configure && \
-    make && \
-    strip src/midasd && \
-    strip src/midas-cli && \
-    mv src/midasd /usr/local/bin/ && \
-    mv src/midas-cli /usr/local/bin/ && \
+RUN strip ./midasd && \
+    strip ./midas-cli && \
+    mv ./midasd /usr/local/bin/ && \
+    mv ./midas-cli /usr/local/bin/ && \
     rm -rf /midas 
 
 VOLUME ["/root/.midas"]
 
-EXPOSE 22331
+EXPOSE 44444
 
-CMD exec ipsd && tail -f /root/.midas/debug.log
+CMD exec midasd && tail -f /root/.midas/debug.log

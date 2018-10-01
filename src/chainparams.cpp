@@ -54,10 +54,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000008763fca080231ee6052b0dfc5ef37a004355a0bde6ee0c9ecf953b0a961"));
+    (0, uint256("0x000004cfe1adfaa8ef2cbe89e5e95775f943db44bb408cdd7d710cce661ad3ba"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1537801966, // * UNIX timestamp of last checkpoint block
+    1538390941, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
@@ -67,7 +67,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1537801966,
+    1538390941,
     0,
     250};
 
@@ -75,7 +75,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1537801966,
+    1538390941,
     0,
     100};
 
@@ -109,10 +109,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xa0;
-        pchMessageStart[1] = 0x4e;
-        pchMessageStart[2] = 0x0f;
-        pchMessageStart[3] = 0xc1;
+        pchMessageStart[0] = 0xc3;
+        pchMessageStart[1] = 0x4a;
+        pchMessageStart[2] = 0x5f;
+        pchMessageStart[3] = 0xde;
         vAlertPubKey = ParseHex("04a7cf65df61f736b36388738bb5f37fc549b2c67361f38a5a244b8e362422288c32561807492d331f62a2406fc49b260caad2c38ed27b7bcb13148593c99f4ceb");
         nDefaultPort = 44444;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Midas starting difficulty is 1 / 2^12
@@ -129,7 +129,7 @@ public:
         nMaxMoneyOut = 5000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 300;
+        nLastPOWBlock = 3500;
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 863787;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
@@ -164,15 +164,15 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1537801966;
+        genesis.nTime = 1538390941;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 69287;
+        genesis.nNonce = 279439;
 
         hashGenesisBlock = genesis.GetHash();
         printf("hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
 		printf("hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
 		
-        assert(hashGenesisBlock == uint256("0x000008763fca080231ee6052b0dfc5ef37a004355a0bde6ee0c9ecf953b0a961"));
+        assert(hashGenesisBlock == uint256("0x000004cfe1adfaa8ef2cbe89e5e95775f943db44bb408cdd7d710cce661ad3ba"));
         assert(genesis.hashMerkleRoot == uint256("0x52ff0fa38c386c286eaf5777d3df6bebc156bc40dba484a4013f463a7ffb1ac9"));
 
         /* vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "midas.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
