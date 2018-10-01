@@ -29,7 +29,10 @@ WORKDIR /midas
 
 COPY . .
 
-RUN strip ./midasd && \
+RUN ./autogen.sh && \
+    ./configure && \
+    make && \
+    strip ./midasd && \
     strip ./midas-cli && \
     mv ./midasd /usr/local/bin/ && \
     mv ./midas-cli /usr/local/bin/ && \
