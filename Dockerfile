@@ -32,10 +32,10 @@ COPY . .
 RUN ./autogen.sh && \
     ./configure && \
     make && \
-    strip ./midasd && \
-    strip ./midas-cli && \
-    mv ./midasd /usr/local/bin/ && \
-    mv ./midas-cli /usr/local/bin/ && \
+    strip ./src/midasd && \
+    strip ./src/midas-cli && \
+    mv ./src/midasd /usr/local/bin/ && \
+    mv ./src/midas-cli /usr/local/bin/ && \
     rm -rf /midas 
 
 VOLUME ["/root/.midas"]
