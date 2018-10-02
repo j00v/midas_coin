@@ -41,7 +41,7 @@ uint32_t CZMdsStake::GetChecksum()
     return nChecksum;
 }
 
-// The MDS block index is the first appearance of the accumulator checksum that was used in the spend
+// The Midas block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
 CBlockIndex* CZMdsStake::GetIndexFrom()
@@ -94,7 +94,7 @@ bool CZMdsStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CZMdsStake::GetUniqueness()
 {
-    //The unique identifier for a MDS is a hash of the serial
+    //The unique identifier for a Midas is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
@@ -123,23 +123,23 @@ bool CZMdsStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 
 bool CZMdsStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the MDS that was staked
+    //Create an output returning the Midas that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
     if (!pwallet->CreateMDSOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create MDS output", __func__);
+        return error("%s: failed to create Midas output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked MDS", __func__);
+        return error("%s: failed to database the staked Midas", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
         if (!pwallet->CreateMDSOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create MDS output", __func__);
+            return error("%s: failed to create Midas output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -165,7 +165,7 @@ bool CZMdsStake::MarkSpent(CWallet *pwallet, const uint256& txid)
     return true;
 }
 
-//!MDS Stake
+//!Midas Stake
 bool CMdsStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
@@ -241,7 +241,7 @@ bool CMdsStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CMdsStake::GetUniqueness()
 {
-    //The unique identifier for a MDS stake is the outpoint
+    //The unique identifier for a Midas stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;

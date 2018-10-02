@@ -61,7 +61,7 @@ CoinDenomination AmountToZerocoinDenomination(CAmount amount)
 }
 
 // return the highest denomination that is less than or equal to the amount given
-// use case: converting MDS to MDS without user worrying about denomination math themselves
+// use case: converting Midas to Midas without user worrying about denomination math themselves
 CoinDenomination AmountToClosestDenomination(CAmount nAmount, CAmount& nRemaining)
 {
     if (nAmount < 1 * COIN)

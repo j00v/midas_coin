@@ -35,7 +35,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
 
-    // "Spending 999999 MDS ought to be enough for anybody." - Bill Gates, 2017
+    // "Spending 999999 Midas ought to be enough for anybody." - Bill Gates, 2017
     ui->MDSPayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
@@ -171,7 +171,7 @@ void PrivacyDialog::on_pushButtonMintMDS_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("MDS is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("Midas is currently undergoing maintenance."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -199,7 +199,7 @@ void PrivacyDialog::on_pushButtonMintMDS_clicked()
         return;
     }
 
-    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " MDS...");
+    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " Midas...");
     ui->TEMintStatus->repaint ();
 
     int64_t nTime = GetTimeMillis();
@@ -217,7 +217,7 @@ void PrivacyDialog::on_pushButtonMintMDS_clicked()
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
 
     // Minting successfully finished. Show some stats for entertainment.
-    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" MDS in ") +
+    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" Midas in ") +
                              QString::number(fDuration) + tr(" sec. Used denominations:\n");
 
     // Clear amount to avoid double spending when accidentally clicking twice
@@ -283,7 +283,7 @@ void PrivacyDialog::on_pushButtonSpendMDS_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("MDS is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("Midas is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
@@ -295,11 +295,11 @@ void PrivacyDialog::on_pushButtonSpendMDS_clicked()
             // Unlock wallet was cancelled
             return;
         }
-        // Wallet is unlocked now, sedn MDS
+        // Wallet is unlocked now, sedn Midas
         sendMDS();
         return;
     }
-    // Wallet already unlocked or not encrypted at all, send MDS
+    // Wallet already unlocked or not encrypted at all, send Midas
     sendMDS();
 }
 
@@ -352,14 +352,14 @@ void PrivacyDialog::sendMDS()
         return;
     }
 
-    // Convert change to MDS
+    // Convert change to Midas
     bool fMintChange = ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
     fMinimizeChange = ui->checkBoxMinimizeChange->isChecked();
     settings.setValue("fMinimizeChange", fMinimizeChange);
 
-    // Warn for additional fees if amount is not an integer and change as MDS is requested
+    // Warn for additional fees if amount is not an integer and change as Midas is requested
     bool fWholeNumber = floor(dAmount) == dAmount;
     double dzFee = 0.0;
 
@@ -368,7 +368,7 @@ void PrivacyDialog::sendMDS()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " MDS </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " Midas </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -395,7 +395,7 @@ void PrivacyDialog::sendMDS()
 
     // General info
     QString strQuestionString = tr("Are you sure you want to send?<br /><br />");
-    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " MDS</b>";
+    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " Midas</b>";
     QString strAddress = tr(" to address ") + QString::fromStdString(address.ToString()) + strAddressLabel + " <br />";
 
     if(ui->payTo->text().isEmpty()){
@@ -421,7 +421,7 @@ void PrivacyDialog::sendMDS()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware.\nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from MDS selector if applicable
+    // use mints from Midas selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
     if (!ZMdsControlDialog::setSelectedMints.empty()) {
@@ -431,8 +431,8 @@ void PrivacyDialog::sendMDS()
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
                 //version 1 coins have to use full security level to successfully spend.
                 if (nSecurityLevel < 100) {
-                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 MDS require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
-                    ui->TEMintStatus->setPlainText(tr("Failed to spend MDS"));
+                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 Midas require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+                    ui->TEMintStatus->setPlainText(tr("Failed to spend Midas"));
                     ui->TEMintStatus->repaint();
                     return;
                 }
@@ -447,7 +447,7 @@ void PrivacyDialog::sendMDS()
         }
     }
 
-    // Spend MDS
+    // Spend Midas
     CWalletTx wtxNew;
     CZerocoinSpendReceipt receipt;
     bool fSuccess = false;
@@ -463,14 +463,14 @@ void PrivacyDialog::sendMDS()
     // Display errors during spend
     if (!fSuccess) {
         if (receipt.GetStatus() == MDS_SPEND_V1_SEC_LEVEL) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 MDS require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
-            ui->TEMintStatus->setPlainText(tr("Failed to spend MDS"));
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 Midas require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+            ui->TEMintStatus->setPlainText(tr("Failed to spend Midas"));
             ui->TEMintStatus->repaint();
             return;
         }
 
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one MDS transaction
+        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one Midas transaction
         if (nNeededSpends > nMaxSpends) {
             QString strStatusMessage = tr("Too much inputs (") + QString::number(nNeededSpends, 10) + tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
             strStatusMessage += tr("\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
@@ -488,7 +488,7 @@ void PrivacyDialog::sendMDS()
     }
 
     if (walletModel && walletModel->getAddressTableModel()) {
-        // If MDS was spent successfully update the addressbook with the label
+        // If Midas was spent successfully update the addressbook with the label
         std::string labelText = ui->addAsLabel->text().toStdString();
         if (!labelText.empty())
             walletModel->updateAddressBookLabels(address.Get(), labelText, "send");
@@ -496,7 +496,7 @@ void PrivacyDialog::sendMDS()
             walletModel->updateAddressBookLabels(address.Get(), "(no label)", "send");
     }
 
-    // Clear zmds selector in case it was used
+    // Clear zmidas selector in case it was used
     ZMdsControlDialog::setSelectedMints.clear();
     ui->labelMdsSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
@@ -506,7 +506,7 @@ void PrivacyDialog::sendMDS()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("MDS Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("Midas Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -522,7 +522,7 @@ void PrivacyDialog::sendMDS()
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("MDS Mint");
+            strStats += tr("Midas Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
@@ -695,7 +695,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " MDS </b>";
+                        QString::number(nSumPerCoin) + " Midas </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -733,9 +733,9 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" MDS "));
-    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" MDS "));
-    ui->labelzAvailableAmount_4->setText(QString::number(zerocoinBalance/COIN) + QString(" MDS "));
+    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" Midas "));
+    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" Midas "));
+    ui->labelzAvailableAmount_4->setText(QString::number(zerocoinBalance/COIN) + QString(" Midas "));
     ui->labelMDSAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 
     // Display AutoMint status
@@ -745,13 +745,13 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
     updateSPORK16Status();
 
     // Display global supply
-    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>MDS </b> "));
-    ui->labelZsupplyAmount_2->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>MDS </b> "));
+    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>Midas </b> "));
+    ui->labelZsupplyAmount_2->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>Midas </b> "));
 
     for (auto denom : libzerocoin::zerocoinDenomList) {
         int64_t nSupply = chainActive.Tip()->mapZerocoinSupply.at(denom);
         QString strSupply = QString::number(nSupply) + " x " + QString::number(denom) + " = <b>" +
-                            QString::number(nSupply*denom) + " MDS </b> ";
+                            QString::number(nSupply*denom) + " Midas </b> ";
         switch (denom) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
                 ui->labelZsupplyAmount1->setText(strSupply);
@@ -831,19 +831,19 @@ void PrivacyDialog::updateSPORK16Status()
     bool fButtonsEnabled =  ui->pushButtonMintMDS->isEnabled();
     bool fMaintenanceMode = GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
     if (fMaintenanceMode && fButtonsEnabled) {
-        // Mint MDS
+        // Mint Midas
         ui->pushButtonMintMDS->setEnabled(false);
-        ui->pushButtonMintMDS->setToolTip(tr("MDS is currently disabled due to maintenance."));
+        ui->pushButtonMintMDS->setToolTip(tr("Midas is currently disabled due to maintenance."));
 
-        // Spend MDS
+        // Spend Midas
         ui->pushButtonSpendMDS->setEnabled(false);
-        ui->pushButtonSpendMDS->setToolTip(tr("MDS is currently disabled due to maintenance."));
+        ui->pushButtonSpendMDS->setToolTip(tr("Midas is currently disabled due to maintenance."));
     } else if (!fMaintenanceMode && !fButtonsEnabled) {
-        // Mint MDS
+        // Mint Midas
         ui->pushButtonMintMDS->setEnabled(true);
-        ui->pushButtonMintMDS->setToolTip(tr("PrivacyDialog", "Enter an amount of MDS to convert to MDS", 0));
+        ui->pushButtonMintMDS->setToolTip(tr("PrivacyDialog", "Enter an amount of Midas to convert to Midas", 0));
 
-        // Spend MDS
+        // Spend Midas
         ui->pushButtonSpendMDS->setEnabled(true);
         ui->pushButtonSpendMDS->setToolTip(tr("Spend Zerocoin. Without 'Pay To:' address creates payments to yourself."));
     }

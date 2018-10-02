@@ -345,9 +345,9 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("MDS Stake");
+        return tr("Midas Stake");
     case TransactionRecord::StakeMDS:
-        return tr("MDS Stake");
+        return tr("Midas Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ObfuscationDenominate:
@@ -361,15 +361,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted MDS to MDS");
+        return tr("Converted Midas to Midas");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent MDS");
+        return tr("Spent Midas");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received MDS from zMDS");
+        return tr("Received Midas from zMidas");
     case TransactionRecord::ZerocoinSpend_Change_Mds:
-        return tr("Minted Change as MDS from MDS Spend");
+        return tr("Minted Change as Midas from Midas Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted MDS to MDS");
+        return tr("Converted Midas to Midas");
 
     default:
         return QString();
@@ -425,9 +425,9 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
     case TransactionRecord::ZerocoinSpend_Change_Mds:
-        return tr("Anonymous (MDS Transaction)");
+        return tr("Anonymous (Midas Transaction)");
     case TransactionRecord::StakeMDS:
-        return tr("Anonymous (MDS Stake)");
+        return tr("Anonymous (Midas Stake)");
     case TransactionRecord::SendToSelf:
     default:
         return tr("(n/a)") + watchAddress;

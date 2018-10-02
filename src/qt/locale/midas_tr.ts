@@ -177,14 +177,14 @@
     </message>
     <message>
         <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MDSs from being stolen by malware infecting your computer.</source>
-        <translation>Midas şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, MDS'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <translation>Midas şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Midas'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>İşlem geçmişini ara</translation>
     </message>
     <message>
-        <source>Privacy Actions for MDS</source>
-        <translation>Gizlilik Aksiyonları MDS</translation>
+        <source>Privacy Actions for Midas</source>
+        <translation>Gizlilik Aksiyonları Midas</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1644,8 +1644,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send MDS to</source>
-        <translation>MDS göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send Midas to</source>
+        <translation>Midas göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1743,32 +1743,32 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>10000 MDS'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>10000 Midas'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>10000 MDS'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>10000 Midas'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
-        <translation>Bu seçenek en hızlıdır ve 10000 MDS'yi anonimleştirmek için ~ 0.025 MDS'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Bu seçenek en hızlıdır ve 10000 Midas'yi anonimleştirmek için ~ 0.025 Midas'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 10000 MDS'yi anonimleştirmek için yaklaşık 0.05 MDS'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 10000 Midas'yi anonimleştirmek için yaklaşık 0.05 Midas'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
     </message>
     <message>
-        <source>0.1 MDS per 10000 MDS you anonymize.</source>
-        <translation>0.1 MDS her 10000 MDS anonimleştirmeye.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>0.1 Midas her 10000 Midas anonimleştirmeye.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1911,24 +1911,24 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable MDS Automint</source>
-        <translation>MDS Otomatik basımı etkinleştir</translation>
+        <source>Enable Midas Automint</source>
+        <translation>Midas Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming MDS which get automatically converted to MDS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak MDS'ye dönüştürülen gelen MDS yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming Midas which get automatically converted to Midas via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak Midas'ye dönüştürülen gelen Midas yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted MDS</source>
-        <translation>Otomatikleştirilmiş MDS yüzdesi</translation>
+        <source>Percentage of autominted Midas</source>
+        <translation>Otomatikleştirilmiş Midas yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough MDS for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli MDS bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough Midas for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli Midas bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
-        <source>Preferred Automint MDS Denomination</source>
-        <translation>Tercih edilen Automint MDS Nominal değeri</translation>
+        <source>Preferred Automint Midas Denomination</source>
+        <translation>Tercih edilen Automint Midas Nominal değeri</translation>
     </message>
     <message>
         <source>Connect to the Midas network through a SOCKS5 proxy.</source>
@@ -2078,8 +2078,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS Bakiyesi</translation>
+        <source>Midas Balance</source>
+        <translation>Midas Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2102,8 +2102,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Güncel Midas bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS Bakiyesi</translation>
+        <source>Midas Balance</source>
+        <translation>Midas Bakiyesi</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Midas network after a connection is established, but this process has not completed yet.</source>
@@ -2150,8 +2150,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked MDS or Masternode collaterals. These are excluded from MDS minting.</source>
-        <translation>Kilitli MDS veya Masternode teminatları. Bunlar MDS matlaştırmadan çıkarılır.</translation>
+        <source>Locked Midas or Masternode collaterals. These are excluded from Midas minting.</source>
+        <translation>Kilitli Midas veya Masternode teminatları. Bunlar Midas matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2162,8 +2162,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>onaylanmamış:</translation>
     </message>
     <message>
-        <source>Your current MDS balance, unconfirmed and immature MDS included.</source>
-        <translation>Güncel MDS bakiyeniz, onaylanmamış ve olgunlaşmamış MDS'ler dahil.</translation>
+        <source>Your current Midas balance, unconfirmed and immature Midas included.</source>
+        <translation>Güncel Midas bakiyeniz, onaylanmamış ve olgunlaşmamış Midas'ler dahil.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2174,10 +2174,10 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>senkronizasyon dışı</translation>
     </message>
     <message>
-        <source>Current percentage of MDS.
+        <source>Current percentage of Midas.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Mevcut MDS yüzdesi.
+        <translation>Mevcut Midas yüzdesi.
 AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi etrafında düzelir (varsayılan = 10%).
 </translation>
     </message>
@@ -2321,8 +2321,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2333,8 +2333,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>Mintinge hazır</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2385,24 +2385,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için MDS</translation>
+        <source>Available (mature and spendable) Midas for spending</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için Midas</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Kullanılabilir Bakiye:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending
+        <source>Available (mature and spendable) Midas for spending
 
-MDS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için MDS
+Midas are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için Midas
 
-MDS, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
+Midas, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2473,8 +2473,8 @@ MDS, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhept
         <translation>Zerocoin durumu:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature MDS</source>
-        <translation>Doğrulanmamış ve olgunlaşmamış MDS dahil toplam bakiye</translation>
+        <source>Total Balance including unconfirmed and immature Midas</source>
+        <translation>Doğrulanmamış ve olgunlaşmamış Midas dahil toplam bakiye</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2649,12 +2649,12 @@ Maximum allowed: </source>
 Maksimum bırakılan: </translation>
     </message>
     <message>
-        <source>MDS is currently disabled due to maintenance.</source>
-        <translation>MDS bakım nedeniyle şu an kullanıma kapalı.</translation>
+        <source>Midas is currently disabled due to maintenance.</source>
+        <translation>Midas bakım nedeniyle şu an kullanıma kapalı.</translation>
     </message>
     <message>
-        <source>MDS is currently undergoing maintenance.</source>
-        <translation>MDS halen bakım alıyor.</translation>
+        <source>Midas is currently undergoing maintenance.</source>
+        <translation>Midas halen bakım alıyor.</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2677,8 +2677,8 @@ Maksimum bırakılan: </translation>
         <translation>Başarılı şekilde mint edildi</translation>
     </message>
     <message>
-        <source> MDS in </source>
-        <translation> MDS in </translation>
+        <source> Midas in </source>
+        <translation> Midas in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -3428,8 +3428,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3540,8 +3540,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized MDS</source>
-        <translation>anonim edilmiş MDS</translation>
+        <source>Anonymized Midas</source>
+        <translation>anonim edilmiş Midas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4436,8 +4436,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 MDS.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 MDS ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 Midas.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 Midas ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4474,8 +4474,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4565,12 +4565,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in MDS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (MDS / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (Midas / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in MDS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (MDS / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (Midas / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

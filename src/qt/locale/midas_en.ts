@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -557,7 +557,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for MDS</source>
+        <source>Privacy Actions for Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2125,7 +2125,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send MDS to</source>
+        <source>Add destinations to send Midas to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2248,12 +2248,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2263,12 +2263,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2278,7 +2278,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 MDS per 10000 MDS you anonymize.</source>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2457,33 +2457,33 @@ https://www.transifex.com/midas-project/midas-project-translations</source>
     </message>
     <message>
         <location line="-169"/>
-        <source>Enable automatic minting of MDS units to MDS</source>
+        <source>Enable automatic minting of Midas units to Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable MDS Automint</source>
+        <source>Enable Midas Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Percentage of incoming MDS which get automatically converted to MDS via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming Midas which get automatically converted to Midas via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted MDS</source>
+        <source>Percentage of autominted Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough MDS for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough Midas for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint MDS Denomination</source>
+        <source>Preferred Automint Midas Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2692,7 +2692,7 @@ https://www.transifex.com/midas-project/midas-project-translations</source>
     </message>
     <message>
         <location line="+71"/>
-        <source>MDS Balance</source>
+        <source>Midas Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2729,14 +2729,14 @@ https://www.transifex.com/midas-project/midas-project-translations</source>
     </message>
     <message>
         <location line="+96"/>
-        <source>MDS Balance</source>
+        <source>Midas Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
         <location line="+17"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These MDS are spendable.</source>
+These Midas are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2809,7 +2809,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked MDS or Masternode collaterals. These are excluded from MDS minting.</source>
+        <source>Locked Midas or Masternode collaterals. These are excluded from Midas minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2825,7 +2825,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+58"/>
         <location line="+19"/>
-        <source>Your current MDS balance, unconfirmed and immature MDS included.</source>
+        <source>Your current Midas balance, unconfirmed and immature Midas included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2841,7 +2841,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+106"/>
-        <source>Current percentage of MDS.
+        <source>Current percentage of Midas.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -3032,7 +3032,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-371"/>
         <location line="+651"/>
-        <source>MDS</source>
+        <source>Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3047,7 +3047,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+19"/>
-        <source>0.000 000 00 MDS</source>
+        <source>0.000 000 00 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3098,17 +3098,17 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+182"/>
         <location line="+52"/>
-        <source>Enter an amount of Mds to convert to MDS</source>
+        <source>Enter an amount of Mds to convert to Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+301"/>
-        <source>MDS Control</source>
+        <source>Midas Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>MDS Selected:</source>
+        <source>Midas Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3136,7 +3136,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) MDS for spending</source>
+        <source>Available (mature and spendable) Midas for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3146,9 +3146,9 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) MDS for spending
+        <source>Available (mature and spendable) Midas for spending
 
-MDS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+Midas are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3163,7 +3163,7 @@ MDS are mature when they have more than 20 confirmations AND more than 2 mints o
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
-        <source>0 MDS</source>
+        <source>0 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3254,7 +3254,7 @@ MDS are mature when they have more than 20 confirmations AND more than 2 mints o
     <message>
         <location line="+68"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature MDS</source>
+        <source>Total Balance including unconfirmed and immature Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3287,14 +3287,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+40"/>
-        <source>Show the current status of automatic MDS minting.
+        <source>Show the current status of automatic Midas minting.
 
 To change the status (restart required):
 - enable: add &apos;enablezeromint=1&apos; to midas.conf
 - disable: add &apos;enablezeromint=0&apos; to midas.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted MDS
+- menu Settings-&gt;Options-&gt;Percentage of autominted Midas
 
 </source>
         <translation type="unfinished"></translation>
@@ -3547,12 +3547,12 @@ Maximum allowed: </source>
     </message>
     <message>
         <location line="+34"/>
-        <source>MDS Spend #: </source>
+        <source>Midas Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>MDS Mint</source>
+        <source>Midas Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3573,13 +3573,13 @@ Maximum allowed: </source>
     <message>
         <location line="+12"/>
         <location line="+4"/>
-        <source>MDS is currently disabled due to maintenance.</source>
+        <source>Midas is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-639"/>
         <location line="+111"/>
-        <source>MDS is currently undergoing maintenance.</source>
+        <source>Midas is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3690,7 +3690,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <location line="+0"/>
-        <source> MDS in </source>
+        <source> Midas in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3767,13 +3767,13 @@ Maximum allowed: </source>
     <message>
         <location line="+24"/>
         <location line="+32"/>
-        <source>Version 1 MDS require a security level of 100 to successfully spend.</source>
+        <source>Version 1 Midas require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-31"/>
         <location line="+32"/>
-        <source>Failed to spend MDS</source>
+        <source>Failed to spend Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3801,7 +3801,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message numerus="yes">
         <location line="+336"/>
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of MDS to convert to MDS</comment>
+        <comment>Enter an amount of Midas to convert to Midas</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -4232,7 +4232,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom MDS Backup Path:</source>
+        <source>Custom Midas Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4794,7 +4794,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 MDS</source>
+        <source>0 Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4935,7 +4935,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized MDS</source>
+        <source>Anonymized Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5810,12 +5810,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>MDS Stake</source>
+        <source>Midas Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>MDS Stake</source>
+        <source>Midas Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5840,37 +5840,37 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted MDS to MDS</source>
+        <source>Converted Midas to Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent MDS</source>
+        <source>Spent Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received MDS from zMDS</source>
+        <source>Received Midas from zMidas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as MDS from MDS Spend</source>
+        <source>Minted Change as Midas from Midas Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted MDS to MDS</source>
+        <source>Converted Midas to Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+56"/>
-        <source>Anonymous (MDS Transaction)</source>
+        <source>Anonymous (Midas Transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Anonymous (MDS Stake)</source>
+        <source>Anonymous (Midas Stake)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6134,12 +6134,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-280"/>
-        <source>Received MDS from zMDS</source>
+        <source>Received Midas from zMidas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Zerocoin Spend, Change in MDS</source>
+        <source>Zerocoin Spend, Change in Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6186,7 +6186,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 MDS.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 Midas.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6227,7 +6227,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ZMdsControlDialog</name>
     <message>
         <location filename="../forms/zmdscontroldialog.ui" line="+20"/>
-        <source>Select MDS to Spend</source>
+        <source>Select Midas to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6243,7 +6243,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>MDS</source>
+        <source>Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6326,17 +6326,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+5"/>
-        <source>Enable automatic wallet backups triggered after each MDS minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each Midas minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6381,12 +6381,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in MDS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in MDS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6521,12 +6521,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MDS.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 Midas.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 MDS.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 Midas.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6926,7 +6926,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in MDS/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in Midas/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7091,7 +7091,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+9"/>
-        <source>Reindex the MDS and MDS money supply statistics</source>
+        <source>Reindex the Midas and Midas money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7183,7 +7183,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify custom backup path to add a copy of any automatic MDS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic Midas backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7808,7 +7808,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing MDS wallet...</source>
+        <source>Syncing Midas wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7993,7 +7993,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of MDS</source>
+        <source>Value is below the smallest available denomination (= 1) of Midas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8013,7 +8013,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Version 1 MDS require a security level of 100 to successfully spend.</source>
+        <source>Version 1 Midas require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

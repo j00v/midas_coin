@@ -169,14 +169,14 @@
     </message>
     <message>
         <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MDSs from being stolen by malware infecting your computer.</source>
-        <translation>Midas es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus MDS de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <translation>Midas es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus Midas de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES MDSS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 MDS</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 Midas</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 MDS</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 MDS per anonimitzar 10000 MDS</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 Midas per anonimitzar 10000 Midas</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 MDS per anonimitzar 10000 MDS</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 Midas per anonimitzar 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1302,12 +1302,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1322,8 +1322,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1969,8 +1969,8 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>

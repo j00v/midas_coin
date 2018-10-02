@@ -177,15 +177,15 @@
     </message>
     <message>
         <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MDSs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar Midas išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų MDS nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <translation>Dabar Midas išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų Midas nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO MDS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO Midas&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Naršyti pavedimų istoriją</translation>
     </message>
     <message>
-        <source>Privacy Actions for MDS</source>
-        <translation>MDS Saugumo Veiksmai </translation>
+        <source>Privacy Actions for Midas</source>
+        <translation>Midas Saugumo Veiksmai </translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1651,8 +1651,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send MDS to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti MDS</translation>
+        <source>Add destinations to send Midas to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti Midas</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1750,32 +1750,32 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 MDS</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 Midas</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 MDS</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 MDS, kad anonimizuotų 10000 MDS</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 Midas, kad anonimizuotų 10000 Midas</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 MDS, kad anonimizuotų 10000 MDS</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 Midas, kad anonimizuotų 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 MDS per 10000 MDS you anonymize.</source>
-        <translation>0.1 MDS kas 1000 MDS kuriuos anonimizuosite.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>0.1 Midas kas 1000 Midas kuriuos anonimizuosite.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1890,24 +1890,24 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MDS units to MDS</source>
-        <translation>Įgalinti automatinį konvertavimą iš MDS į MDS</translation>
+        <source>Enable automatic minting of Midas units to Midas</source>
+        <translation>Įgalinti automatinį konvertavimą iš Midas į Midas</translation>
     </message>
     <message>
-        <source>Enable MDS Automint</source>
-        <translation>Įgalinti MDS Automatinį nukaldinima</translation>
+        <source>Enable Midas Automint</source>
+        <translation>Įgalinti Midas Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming MDS which get automatically converted to MDS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto MDS, kuris automatiškai bus konvertuotas į MDS naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming Midas which get automatically converted to Midas via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto Midas, kuris automatiškai bus konvertuotas į Midas naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted MDS</source>
-        <translation>Automatiškai sukurtų MDS procentas</translation>
+        <source>Percentage of autominted Midas</source>
+        <translation>Automatiškai sukurtų Midas procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint MDS Denomination</source>
-        <translation>Pageidautinas MDS Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint Midas Denomination</source>
+        <translation>Pageidautinas Midas Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the Midas network through a SOCKS5 proxy.</source>
@@ -2029,8 +2029,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS Balansas</translation>
+        <source>Midas Balance</source>
+        <translation>Midas Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2057,14 +2057,14 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Jūsų dabartinis Midas balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS Balansas</translation>
+        <source>Midas Balance</source>
+        <translation>Midas Balansas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These MDS are spendable.</source>
+These Midas are spendable.</source>
         <translation>Subrendę: daugiau nei 20 patvirtinimų ir daugiau nei 1 konvertacija to pačio nominalo, kai jis jau buvo konvertuotas.
-Šiuos MDS galima išleisti.</translation>
+Šiuos Midas galima išleisti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2117,8 +2117,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked MDS or Masternode collaterals. These are excluded from MDS minting.</source>
-        <translation>Užrakinti MDS arba Masternode užstatai. Jie yra neįtraukti į MDS kalimą.</translation>
+        <source>Locked Midas or Masternode collaterals. These are excluded from Midas minting.</source>
+        <translation>Užrakinti Midas arba Masternode užstatai. Jie yra neįtraukti į Midas kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2222,8 +2222,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2234,8 +2234,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinama Konvertavimui:</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2266,12 +2266,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>PRIVATUMAS</translation>
     </message>
     <message>
-        <source>MDS Control</source>
+        <source>Midas Control</source>
         <translation>Mds Kontrolė</translation>
     </message>
     <message>
-        <source>MDS Selected:</source>
-        <translation>Pasirinkta MDS:</translation>
+        <source>Midas Selected:</source>
+        <translation>Pasirinkta Midas:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2290,8 +2290,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinamas Balansas: </translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Security Level:</source>
@@ -2338,8 +2338,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Statistika:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature MDS</source>
-        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį MDS</translation>
+        <source>Total Balance including unconfirmed and immature Midas</source>
+        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį Midas</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2516,12 +2516,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti sumą</translation>
     </message>
     <message>
-        <source>MDS Spend #: </source>
-        <translation>MDS Išleidimas #:</translation>
+        <source>Midas Spend #: </source>
+        <translation>Midas Išleidimas #:</translation>
     </message>
     <message>
-        <source>MDS Mint</source>
-        <translation>MDS Konvertavimas</translation>
+        <source>Midas Mint</source>
+        <translation>Midas Konvertavimas</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2628,8 +2628,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>su Saugumo Lygmeniu</translation>
     </message>
     <message>
-        <source>Failed to spend MDS</source>
-        <translation>Nepavyko išleisti MDS</translation>
+        <source>Failed to spend Midas</source>
+        <translation>Nepavyko išleisti Midas</translation>
     </message>
     <message>
         <source>serial: </source>
@@ -3001,8 +3001,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Pasirinktinio pakeitimo adresas</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3455,8 +3455,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>

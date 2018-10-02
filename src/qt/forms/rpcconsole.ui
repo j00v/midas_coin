@@ -1328,7 +1328,7 @@
        <item row="4" column="0">
         <widget class="QLabel" name="wallet_custommdsbackuppath_label">
          <property name="text">
-          <string>Custom MDS Backup Path:</string>
+          <string>Custom Midas Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>

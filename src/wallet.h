@@ -85,12 +85,12 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT1000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT1000IFMN = 4, // ONLY_NONDENOMINATED and not 1000 MDS at the same time
+    ONLY_NONDENOMINATED_NOT1000IFMN = 4, // ONLY_NONDENOMINATED and not 1000 Midas at the same time
     ONLY_1000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for MDS send
+// Possible states for Midas send
 enum ZerocoinSpendStatus {
     MDS_SPEND_OKAY = 0,                            // No error
     MDS_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
@@ -670,7 +670,7 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** MDS reset */
+    /** Midas reset */
     boost::signals2::signal<void()> NotifyMDSReset;
 
     /** notify wallet file backed up */

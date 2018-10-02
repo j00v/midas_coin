@@ -40,48 +40,48 @@ frequently tested on them.
 Notable Changes
 ==============
 
-MDS Updates
+Midas Updates
 --------------
 
-### MDS Staking
+### Midas Staking
 
-MDS Staking is here! MDS staking will be activated on the morning of the 8th of May 2018. With the release of MDS staking, there are effectively 2 versions of MDS, MDS minted on the 3.0.6 Midas wallet or lower, and MDS minted on Midas wallet version or higher. New features in this release will require the use of MDS v2, MDS minted on this wallet release 3.1.0 or later. If you currently hold MDS v1 and wish to take advantage of MDS staking and deterministic MDS, you will need to spend the MDS v1 to yourself and remint MDS v2.
-Note: To find your MDS version, click the privacy tab, then the MDS Control button then expand the arrows next to the desired denomination.
-
-
-### Deterministic MDS Seed Keys
-
-MDS is now associated with a deterministic seed key. With this seed key, users are able to securely backup their MDS outside of the wallet that the MDS had been minted on. MDS can also be transferred from wallet to wallet without the need of transferring the wallet data file.
+Midas Staking is here! Midas staking will be activated on the morning of the 8th of May 2018. With the release of Midas staking, there are effectively 2 versions of Midas, Midas minted on the 3.0.6 Midas wallet or lower, and Midas minted on Midas wallet version or higher. New features in this release will require the use of Midas v2, Midas minted on this wallet release 3.1.0 or later. If you currently hold Midas v1 and wish to take advantage of Midas staking and deterministic Midas, you will need to spend the Midas v1 to yourself and remint Midas v2.
+Note: To find your Midas version, click the privacy tab, then the Midas Control button then expand the arrows next to the desired denomination.
 
 
-### Updated MDS minting
+### Deterministic Midas Seed Keys
 
-MDS minting now only requires 1 further mint (down from 2) to mature. MDS mints still require 20 confirmations.  Mints also require that the 'second' mint is at least two checkpoints deep in the chain (this was already the case, but the logic was not as precise).
-
-
-### MDS Search
-
-Users will now have the ability to search the blockchain for a specific serial # to see if a MDS denomination has been spent or not.
+Midas is now associated with a deterministic seed key. With this seed key, users are able to securely backup their Midas outside of the wallet that the Midas had been minted on. Midas can also be transferred from wallet to wallet without the need of transferring the wallet data file.
 
 
+### Updated Midas minting
 
-MDS/MDS Staking and Masternode Rewards
+Midas minting now only requires 1 further mint (down from 2) to mature. Midas mints still require 20 confirmations.  Mints also require that the 'second' mint is at least two checkpoints deep in the chain (this was already the case, but the logic was not as precise).
+
+
+### Midas Search
+
+Users will now have the ability to search the blockchain for a specific serial # to see if a Midas denomination has been spent or not.
+
+
+
+Midas/Midas Staking and Masternode Rewards
 --------------
 
-### MDS, MDS and Masternode Payment Schedule
+### Midas, Midas and Masternode Payment Schedule
 
-To encourage the use of MDS and increase the Midas zerocoin anonymity set, the Midas payment schedule has been changed to the following:
+To encourage the use of Midas and increase the Midas zerocoin anonymity set, the Midas payment schedule has been changed to the following:
 
-If a user staking MDS wins the reward for their block, the following MDS reward will be: 
-- 3 MDS (3 x 1 denominations) rewarded to the staker, 2 MDS rewarded to the masternode owner and 1 MDS available for the budget. This is a total block reward of 6 MDS, up from 5.
+If a user staking Midas wins the reward for their block, the following Midas reward will be: 
+- 3 Midas (3 x 1 denominations) rewarded to the staker, 2 Midas rewarded to the masternode owner and 1 Midas available for the budget. This is a total block reward of 6 Midas, up from 5.
 
-If a user staking MDS wins the reward, the following amounts will be rewarded: 
-- 2 MDS to the MDS staker, 3 MDS to the Masternode owner and 1 MDS available for the budget. This is a total block reward of 6 MDS, up from 5.
+If a user staking Midas wins the reward, the following amounts will be rewarded: 
+- 2 Midas to the Midas staker, 3 Midas to the Masternode owner and 1 Midas available for the budget. This is a total block reward of 6 Midas, up from 5.
 
 
-### Return change to sender when minting MDS
+### Return change to sender when minting Midas
 
-Previously, MDS minting would send any change to a newly generated "change address". This has caused confusion among some users, and in some cases insufficient backups of the wallet. The wallet will now find the contributing address which contained the most MDS and return the change from a MDS mint to that address.
+Previously, Midas minting would send any change to a newly generated "change address". This has caused confusion among some users, and in some cases insufficient backups of the wallet. The wallet will now find the contributing address which contained the most Midas and return the change from a Midas mint to that address.
 
 
 User Experience
@@ -97,9 +97,9 @@ The overview tab has been simplified greatly to display only balances that are a
 ### Wallet Options
 
 There have been a number of changes to the tasks that you are able to perform from the wallet options. Users will now have the ability to do the following: 
--	Enable and disable the auto MDS minting feature. This is enabled by default and the enablezeromint=0 setting in the midas.conf file will overwrite the GUI option.
--	The percentage of autominted MDS can now be set from 1 to 100, changed from 10 – 100.
--	The stake split threshold can now be set VIA the wallet options. This setting is an advanced feature for those wishing to remain staking regular MDS.
+-	Enable and disable the auto Midas minting feature. This is enabled by default and the enablezeromint=0 setting in the midas.conf file will overwrite the GUI option.
+-	The percentage of autominted Midas can now be set from 1 to 100, changed from 10 – 100.
+-	The stake split threshold can now be set VIA the wallet options. This setting is an advanced feature for those wishing to remain staking regular Midas.
 -	“Unlock for staking and anonymization only” is now selected by default when unlocking the wallet from the User Interface
 
 
@@ -127,7 +127,7 @@ Note: System write permissions must be appropriate for the location the wallet i
 ### Details:
 
 * If path is set to directory, the backup will be named `wallet.dat-<year>-<month>-<day>-<hour>-<minute>-<second>`
-* If MDS backup, auto generated name is `wallet-automdsbackup.dat-<year>-<month>-<day>-<hour>-<minute>-<second>`
+* If Midas backup, auto generated name is `wallet-automdsbackup.dat-<year>-<month>-<day>-<hour>-<minute>-<second>`
 * If path set to file, backup will be named `<filename>.dat`
 * walletbackupthreshold enables the user to select the maximum count of backup files to be written before overwriting existing backups.
 
@@ -188,7 +188,7 @@ This allows for a user (such as a third party integration) to query the blockcha
 ### New RPC command 
 `findserial`
 
-Search the zerocoin database for a zerocoinspend transaction that contains the given serial. This will be a helpful tool for the Midas support group, which often times sees users say "I didn't spend that MDS". This RPC call allows for support to grab the serial, and then find the spend tx on the chain.
+Search the zerocoin database for a zerocoinspend transaction that contains the given serial. This will be a helpful tool for the Midas support group, which often times sees users say "I didn't spend that Midas". This RPC call allows for support to grab the serial, and then find the spend tx on the chain.
 
 
 ### New RPC commands 
@@ -206,11 +206,11 @@ Network Layer 2 Changes (Proposals / Budgets / SwiftX)
 
 ### Monthly Budget Increase
 
-As voted on by the Midas masternodes, the monthly budget available to be utilised has been increased to 42,000 MDS / month. This MDS only has the opportunity to be raised once per month (paid to winning proposals) with any unused MDS not created by the blockchain.
+As voted on by the Midas masternodes, the monthly budget available to be utilised has been increased to 42,000 Midas / month. This Midas only has the opportunity to be raised once per month (paid to winning proposals) with any unused Midas not created by the blockchain.
 
 ### Budget Finalization Fee
 
-The Midas finalization fee for successful proposals has now been reduced, this fee is now 5 MDS down from 50 MDS. The total fee outlay for a successful proposal is now a total of 55 MDS.
+The Midas finalization fee for successful proposals has now been reduced, this fee is now 5 Midas down from 50 Midas. The total fee outlay for a successful proposal is now a total of 55 Midas.
 
 
 ### SwiftX Raw Transactions
@@ -248,8 +248,8 @@ When inputting wrong data into the GUI for a SOCKS5 proxy, the wallet would cras
 Minor Enhancements
 --------------
 
--	Enforced v1 MDS spends to require a security level of 100
--	Updates to MDS spends to avoid segfaults
+-	Enforced v1 Midas spends to require a security level of 100
+-	Updates to Midas spends to avoid segfaults
 -	Updates to configuration will now reflect on the privacy tab
 -	Fixed a  bug that would not start masternodes from the Midas-Qt masternodes tab
 -	Updated Midas-Qt tooltips
@@ -263,12 +263,12 @@ Minor Enhancements
 Further Reading: Version 2 Zerocoins
 ==============
 
-Several critical security flaws in the zerocoin protocol and Midas's zerocoin implementation have been patched. Enough has changed that new zerocoins are distinct from old zerocoins, and have been labelled as *version 2*. When using the MDS Control dialog in the QT wallet, a user is able to see MDS marked as version 1 or 2.
+Several critical security flaws in the zerocoin protocol and Midas's zerocoin implementation have been patched. Enough has changed that new zerocoins are distinct from old zerocoins, and have been labelled as *version 2*. When using the Midas Control dialog in the QT wallet, a user is able to see Midas marked as version 1 or 2.
 
-zPoS (MDS staking)
+zPoS (Midas staking)
 --------------
 
-Once a MDS has over 200 confirmations it becomes available to stake. Staking MDS will consume the exact zerocoin that is staked and replace it with a freshly minted zerocoin of the same denomination as well as a reward of three 1 denomination MDS. So for example if a 1,000 MDS denomination is staked, the protocol replaces that with a fresh 1,000 denomination and three1 denomination MDSs.
+Once a Midas has over 200 confirmations it becomes available to stake. Staking Midas will consume the exact zerocoin that is staked and replace it with a freshly minted zerocoin of the same denomination as well as a reward of three 1 denomination Midas. So for example if a 1,000 Midas denomination is staked, the protocol replaces that with a fresh 1,000 denomination and three1 denomination MDSs.
 
 Secure Spending
 --------------
@@ -280,7 +280,7 @@ The serial troll situation is mitigated in version 2 by requiring that the seria
 Deterministic Zerocoin Generation
 --------------
 
-Zerocoins, or MDS, are now deterministically generated using a unique 256 bit seed. Each wallet will generate a new seed on its first run. The deterministic seed is used to generate a string of MDS that can be recalculated at any time using the seed. Deterministic MDS allows for users to backup all of their future MDS by simply recording their seed and keeping it in a safe place (similar to backing up a private key for MDS). The MDS seed needs to remain in the wallet in order to spend the MDS after it is generated, if the seed is changed then the coins will not be spendable because the wallet will not have the ability to regenerate all of the private MDS data from the seed. It is important that users record & backup their seed after their first run of the wallet. If the wallet is locked during the first run, then the seed will be generated the first time the wallet is unlocked.
+Zerocoins, or Midas, are now deterministically generated using a unique 256 bit seed. Each wallet will generate a new seed on its first run. The deterministic seed is used to generate a string of Midas that can be recalculated at any time using the seed. Deterministic Midas allows for users to backup all of their future Midas by simply recording their seed and keeping it in a safe place (similar to backing up a private key for Midas). The Midas seed needs to remain in the wallet in order to spend the Midas after it is generated, if the seed is changed then the coins will not be spendable because the wallet will not have the ability to regenerate all of the private Midas data from the seed. It is important that users record & backup their seed after their first run of the wallet. If the wallet is locked during the first run, then the seed will be generated the first time the wallet is unlocked.
 
 Zerocoin Modulus
 --------------
@@ -294,7 +294,7 @@ Midas's zerocoin implementation used the same code from the ZCoin project to imp
 Detailed release notes follow. This overview includes changes that affect behavior, not code moves, refactors and string updates. For convenience in locating the code changes and accompanying discussion, both the pull request and git merge commit are mentioned.
 
 ### Core Features
- - #582 `cb1632520` [Core] MDS v2: zPoS dMDS eMDS external backup and budget fixes (too many to list)
+ - #582 `cb1632520` [Core] Midas v2: zPoS dMDS eMDS external backup and budget fixes (too many to list)
  - #558 `c7e6f0f7f` [Core] Remove Gitan-OSX warning for High Sierra builds (Mrs-X)
  - #523 `926c073ea` [Core] Give high priority to zerocoinspends to make it into the next block. (presstab)
  - #535 `5e8875feb` [Core] Minor refacturing + unused variable removed (Mrs-X)
@@ -318,7 +318,7 @@ Detailed release notes follow. This overview includes changes that affect behavi
  - #542 `61156def7` [Network] Remove vfReachable and modify IsReachable to only use vfLimited. (Patrick Strateman)
 
 ### GUI
- - #572 `d9b23fe60` [Qt] Refresh MDS balance after resetting mints or spends (warrows)
+ - #572 `d9b23fe60` [Qt] Refresh Midas balance after resetting mints or spends (warrows)
  - #571 `1c8e7cb7b` [Qt] Update privacy tab info about zeromint on config change (warrows)
  - #568 `f226de09e` [Qt] Connect automint icon to the UI automint setting change (warrows)
  - #566 `84f43857c` [Qt] Add automint status bar icon (Fuzzbawls)
@@ -329,7 +329,7 @@ Detailed release notes follow. This overview includes changes that affect behavi
  - #521 `fbb105a00` [Qt] Make "For anonymization and staking only" checked by default (Mrs-X)
  - #508 `2cf3be6bb` [Qt] Fix crash when inputting wrong port for network proxy (warrows)
  - #500 `4c01ba65d` [Qt] Remove duplicate code for updating address book labels. (blondfrogs)
- - #506 `ae72bf4e2` [Qt] Autoscroll to end of MDS status output (Mrs-X)
+ - #506 `ae72bf4e2` [Qt] Autoscroll to end of Midas status output (Mrs-X)
  - #499 `6305264f2` [Qt] Send popup simplified + SwiftTX -> SwiftX (Mrs-X)
  - #490 `ba777e4ef` [Qt] Update MultiSend GUI to allow address labels (blondfrogs)
  - #483 `5b1070365` [Qt] Fixed Dynamic Screen Elements Issue for Multisig (blondfrogs)
@@ -361,15 +361,15 @@ Detailed release notes follow. This overview includes changes that affect behavi
  - #170 `027f16c64` [RPC] Convert source tree from json_spirit to UniValue (Fuzzbawls)
 
 ### Wallet
- - #570 `8c8350b59` [Wallet] Add a check on MDS spend to avoid a segfault (warrows)
+ - #570 `8c8350b59` [Wallet] Add a check on Midas spend to avoid a segfault (warrows)
  - #565 `80b803201` [Wallet] Increase valid range for automint percentage (Fuzzbawls)
  - #518 `9f6449a70` [Wallet] Combine fees when possible and fix autocombine insufficient funds (warrows)
  - #497 `f21e4456b` [Wallet] Call AutocombineDust less often (warrows)
  - #498 `bfad2a1df` [Wallet] Change the way transaction list is handled (warrows)
  - #477 `93c5f9ff5` [Wallet] Remove potential memory leak (blondfrogs)
  - #488 `d09cf916a` [Wallet] Fixes an autocombinerewards bug with above max size TXs (warrows)
- - #448 `222ef6e6b` [Wallet] Return change to sender when minting MDS. (presstab)
- - #445 `fc570fc1e` [Wallet] Only require 1 mint to be added before spending MDS. (presstab)
+ - #448 `222ef6e6b` [Wallet] Return change to sender when minting Midas. (presstab)
+ - #445 `fc570fc1e` [Wallet] Only require 1 mint to be added before spending Midas. (presstab)
  
 ### Miscellaneous
  - #559 `d2b017217` [Bug] Segfault with -enableswifttx=0 / -enableswifttx=false (Mrs-X)

@@ -31,7 +31,7 @@ CMDSWallet::CMDSWallet(std::string strWalletFile)
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
                 if (walletdb.EraseMDSSeed_deprecated()) {
-                    LogPrintf("%s: Updated MDS seed databasing\n", __func__);
+                    LogPrintf("%s: Updated Midas seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
                     LogPrintf("%s: failed to remove old mds seed\n", __func__);

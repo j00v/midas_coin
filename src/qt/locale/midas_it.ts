@@ -177,15 +177,15 @@
     </message>
     <message>
         <source>Midas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MDSs from being stolen by malware infecting your computer.</source>
-        <translation>Midas verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi MDS dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <translation>Midas verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi Midas dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI MDS&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI Midas&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for MDS</source>
-        <translation>Operazioni di privacy per MDS</translation>
+        <source>Privacy Actions for Midas</source>
+        <translation>Operazioni di privacy per Midas</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1671,12 +1671,12 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Configura Offuscamento</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 MDS</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 Midas</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 10000 MDS</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Usa 8 masternodi diversi per mixare fino a 10000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1713,24 +1713,24 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MDS units to MDS</source>
-        <translation>Attiva il conio automatico di unità MDS in MDS</translation>
+        <source>Enable automatic minting of Midas units to Midas</source>
+        <translation>Attiva il conio automatico di unità Midas in Midas</translation>
     </message>
     <message>
-        <source>Enable MDS Automint</source>
-        <translation>Attiva Conio automatico MDS</translation>
+        <source>Enable Midas Automint</source>
+        <translation>Attiva Conio automatico Midas</translation>
     </message>
     <message>
-        <source>Percentage of incoming MDS which get automatically converted to MDS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di MDS in entrata che viene automaticamente convertita in MDS attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming Midas which get automatically converted to Midas via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di Midas in entrata che viene automaticamente convertita in Midas attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted MDS</source>
-        <translation>Percentuale di MDS Percentuale di MDS da coniare automaticamente</translation>
+        <source>Percentage of autominted Midas</source>
+        <translation>Percentuale di Midas Percentuale di Midas da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint MDS Denomination</source>
-        <translation>Denominazione preferita conio automatico MDS</translation>
+        <source>Preferred Automint Midas Denomination</source>
+        <translation>Denominazione preferita conio automatico Midas</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1792,8 +1792,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>Bilancio MDS</translation>
+        <source>Midas Balance</source>
+        <translation>Bilancio Midas</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1808,14 +1808,14 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Il tuo saldo Midas corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>Bilancio MDS</translation>
+        <source>Midas Balance</source>
+        <translation>Bilancio Midas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These MDS are spendable.</source>
+These Midas are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi MDS sono spendibili.</translation>
+Questi Midas sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1846,8 +1846,8 @@ Questi MDS sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked MDS or Masternode collaterals. These are excluded from MDS minting.</source>
-        <translation>MDS bloccati o collaterali Masternodo. Questi sono esclusi dal conio di MDS.</translation>
+        <source>Locked Midas or Masternode collaterals. These are excluded from Midas minting.</source>
+        <translation>Midas bloccati o collaterali Masternodo. Questi sono esclusi dal conio di Midas.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1858,18 +1858,18 @@ Questi MDS sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current MDS balance, unconfirmed and immature MDS included.</source>
-        <translation>Il tuo saldo MDS corrente, inclusi MDS non confermati e non maturi</translation>
+        <source>Your current Midas balance, unconfirmed and immature Midas included.</source>
+        <translation>Il tuo saldo Midas corrente, inclusi Midas non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of MDS.
+        <source>Current percentage of Midas.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di MDS.
+        <translation>Percentuale corrente di Midas.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
@@ -1933,12 +1933,12 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1961,16 +1961,16 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of Mds to convert to MDS</source>
-        <translation>Immetti un importo di MDS da convertire in MDS</translation>
+        <source>Enter an amount of Mds to convert to Midas</source>
+        <translation>Immetti un importo di Midas da convertire in Midas</translation>
     </message>
     <message>
-        <source>MDS Control</source>
-        <translation>Controllo MDS</translation>
+        <source>Midas Control</source>
+        <translation>Controllo Midas</translation>
     </message>
     <message>
-        <source>MDS Selected:</source>
-        <translation>MDS selezionati:</translation>
+        <source>Midas Selected:</source>
+        <translation>Midas selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1981,23 +1981,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending</source>
-        <translation>MDS disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) Midas for spending</source>
+        <translation>Midas disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending
+        <source>Available (mature and spendable) Midas for spending
 
-MDS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>MDS disponibili disponibili per essere spesi (maturi e spendibili)
-Gli MDS sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+Midas are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Midas disponibili disponibili per essere spesi (maturi e spendibili)
+Gli Midas sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2040,31 +2040,31 @@ Gli MDS sono maturi quando hanno più di 20 conferme E più di 2 conii della ste
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature MDS</source>
-        <translation>Saldo totale inclusi MDS non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature Midas</source>
+        <translation>Saldo totale inclusi Midas non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic MDS minting.
+        <source>Show the current status of automatic Midas minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to midas.conf
 - disable: add 'enablezeromint=0' to midas.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted MDS
+- menu Settings-&gt;Options-&gt;Percentage of autominted Midas
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico MDS.
+        <translation>Mostra lo stato corrente del conio automatico Midas.
 Per cambiare lo stato (riavvio necessario):
 - attivato: aggiungi 'enablezeromint=1' a midas.conf
 - disattivato: aggiungi 'enablezeromint=0' a midas.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di MDS da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di Midas da coniare automaticamente
 
 </translation>
     </message>
@@ -2209,8 +2209,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copia ammontare</translation>
     </message>
     <message>
-        <source>MDS Mint</source>
-        <translation>Conio MDS</translation>
+        <source>Midas Mint</source>
+        <translation>Conio Midas</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2672,8 +2672,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>

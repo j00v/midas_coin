@@ -38,7 +38,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::MDS)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::Midas)
     {
     }
 
@@ -195,16 +195,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // MDS Balance
+    // Midas Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount mdsAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // MDS Watch-Only Balance
+    // Midas Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
-    // MDS Balance
+    // Midas Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Percentages
@@ -215,7 +215,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = mdsAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // MDS labels
+    // Midas labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, mdsAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -229,7 +229,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // MDS labels
+    // Midas labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -244,7 +244,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelzMDSPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of MDS.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of Midas.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
@@ -265,35 +265,35 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // MDS Available
+    // Midas Available
     bool showMDSAvailable = settingShowAllBalances || mdsAvailableBalance != nTotalBalance;
     bool showWatchOnlyMDSAvailable = showMDSAvailable || nAvailableWatchBalance != nTotalWatchBalance;
     ui->labelBalanceText->setVisible(showMDSAvailable || showWatchOnlyMDSAvailable);
     ui->labelBalance->setVisible(showMDSAvailable || showWatchOnlyMDSAvailable);
     ui->labelWatchAvailable->setVisible(showWatchOnlyMDSAvailable && showWatchOnly);
 
-    // MDS Pending
+    // Midas Pending
     bool showMDSPending = settingShowAllBalances || unconfirmedBalance != 0;
     bool showWatchOnlyMDSPending = showMDSPending || watchUnconfBalance != 0;
     ui->labelPendingText->setVisible(showMDSPending || showWatchOnlyMDSPending);
     ui->labelUnconfirmed->setVisible(showMDSPending || showWatchOnlyMDSPending);
     ui->labelWatchPending->setVisible(showWatchOnlyMDSPending && showWatchOnly);
 
-    // MDS Immature
+    // Midas Immature
     bool showMDSImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = showMDSImmature || watchImmatureBalance != 0;
     ui->labelImmatureText->setVisible(showMDSImmature || showWatchOnlyImmature);
     ui->labelImmature->setVisible(showMDSImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // MDS Locked
+    // Midas Locked
     bool showMDSLocked = settingShowAllBalances || nLockedBalance != 0;
     bool showWatchOnlyMDSLocked = showMDSLocked || nWatchOnlyLockedBalance != 0;
     ui->labelLockedBalanceText->setVisible(showMDSLocked || showWatchOnlyMDSLocked);
     ui->labelLockedBalance->setVisible(showMDSLocked || showWatchOnlyMDSLocked);
     ui->labelWatchLocked->setVisible(showWatchOnlyMDSLocked && showWatchOnly);
 
-    // zMDS
+    // zMidas
     bool showzMDSAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
     bool showzMDSUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
     bool showzMDSImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
@@ -379,7 +379,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("MDS")
+    // update the display unit, to not use the default ("Midas")
     updateDisplayUnit();
 }
 

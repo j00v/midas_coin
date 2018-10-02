@@ -184,8 +184,8 @@
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS MDS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS Midas&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Afficher l'historique de transaction</translation>
     </message>
     <message>
-        <source>Privacy Actions for MDS</source>
-        <translation>Actions confidentielles pour MDS</translation>
+        <source>Privacy Actions for Midas</source>
+        <translation>Actions confidentielles pour Midas</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1640,8 +1640,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Adresse / Montant:</translation>
     </message>
     <message>
-        <source>Add destinations to send MDS to</source>
-        <translation>Ajouter des destinations pour envoyer MDS</translation>
+        <source>Add destinations to send Midas to</source>
+        <translation>Ajouter des destinations pour envoyer Midas</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1727,32 +1727,32 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 MDS</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 Midas</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 MDS</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 Midas</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 MDS pour anonymiser 10000 MDS</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 Midas pour anonymiser 10000 Midas</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 MDS pour anonymiser 10000 MDS</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 Midas pour anonymiser 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 MDS per 10000 MDS you anonymize.</source>
-        <translation>0.1 MDS par 10000 MDS vous anonymisez.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>0.1 Midas par 10000 Midas vous anonymisez.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1887,24 +1887,24 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MDS units to MDS</source>
-        <translation>Activé l'auto-monnayage de MDS unités en MDS</translation>
+        <source>Enable automatic minting of Midas units to Midas</source>
+        <translation>Activé l'auto-monnayage de Midas unités en Midas</translation>
     </message>
     <message>
-        <source>Enable MDS Automint</source>
-        <translation>Activé MDS Auto-monnayage</translation>
+        <source>Enable Midas Automint</source>
+        <translation>Activé Midas Auto-monnayage</translation>
     </message>
     <message>
-        <source>Percentage of incoming MDS which get automatically converted to MDS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des MDS entrants qui seront automatiquement convertis en MDS via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming Midas which get automatically converted to Midas via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des Midas entrants qui seront automatiquement convertis en Midas via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted MDS</source>
-        <translation>Pourcentage de MDS auto-monnayé</translation>
+        <source>Percentage of autominted Midas</source>
+        <translation>Pourcentage de Midas auto-monnayé</translation>
     </message>
     <message>
-        <source>Preferred Automint MDS Denomination</source>
-        <translation>Dénomination préférée d'auto-monnayage MDS</translation>
+        <source>Preferred Automint Midas Denomination</source>
+        <translation>Dénomination préférée d'auto-monnayage Midas</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2066,8 +2066,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Solde total, incluant les pièces indisponibles.</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>Solde de MDS</translation>
+        <source>Midas Balance</source>
+        <translation>Solde de Midas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2094,14 +2094,14 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Votre solde Midas actuel, incluant les transactions non confirmées et immatures</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>Solde de MDS</translation>
+        <source>Midas Balance</source>
+        <translation>Solde de Midas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These MDS are spendable.</source>
+These Midas are spendable.</source>
         <translation>Maturité: plus de 20 confirmations et plus de 1 monnayer de la même dénomination après sa frappe.
-Ces MDS sont dépensables.</translation>
+Ces Midas sont dépensables.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2154,8 +2154,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Dépensable:</translation>
     </message>
     <message>
-        <source>Locked MDS or Masternode collaterals. These are excluded from MDS minting.</source>
-        <translation>MDS Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage MDS.</translation>
+        <source>Locked Midas or Masternode collaterals. These are excluded from Midas minting.</source>
+        <translation>Midas Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage Midas.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2166,8 +2166,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Non confirmé:</translation>
     </message>
     <message>
-        <source>Your current MDS balance, unconfirmed and immature MDS included.</source>
-        <translation>Votre solde courant MDS, incluant les MDS non confirmés et immatures.</translation>
+        <source>Your current Midas balance, unconfirmed and immature Midas included.</source>
+        <translation>Votre solde courant Midas, incluant les Midas non confirmés et immatures.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2178,10 +2178,10 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>désynchronisé</translation>
     </message>
     <message>
-        <source>Current percentage of MDS.
+        <source>Current percentage of Midas.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Le pourcentage actuel de MDS.
+        <translation>Le pourcentage actuel de Midas.
 Si Auto-monnayage est activé, ce pourcentage sera réglé autour du pourcentage Auto-monnayage configuré (par défaut = 10%).</translation>
     </message>
     <message>
@@ -2324,8 +2324,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2336,8 +2336,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Disponible pour Monnayage:</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2376,16 +2376,16 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>CONFIDENTIALITÉ</translation>
     </message>
     <message>
-        <source>Enter an amount of Mds to convert to MDS</source>
-        <translation>Entrez un montant de MDS à convertir en MDS</translation>
+        <source>Enter an amount of Mds to convert to Midas</source>
+        <translation>Entrez un montant de Midas à convertir en Midas</translation>
     </message>
     <message>
-        <source>MDS Control</source>
-        <translation>Contrôle MDS</translation>
+        <source>Midas Control</source>
+        <translation>Contrôle Midas</translation>
     </message>
     <message>
-        <source>MDS Selected:</source>
-        <translation>MDS sélectionné:</translation>
+        <source>Midas Selected:</source>
+        <translation>Midas sélectionné:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2400,24 +2400,24 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Dépenser Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending</source>
-        <translation>MDS disponibles (matures et dépensables) pour dépenser</translation>
+        <source>Available (mature and spendable) Midas for spending</source>
+        <translation>Midas disponibles (matures et dépensables) pour dépenser</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Solde disponible:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending
+        <source>Available (mature and spendable) Midas for spending
 
-MDS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>MDS disponible (mature et utilisable) pour les dépenses
+Midas are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Midas disponible (mature et utilisable) pour les dépenses
 
-Les MDS sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
+Les Midas sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2488,8 +2488,8 @@ Les MDS sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monn
         <translation>Statistiques Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature MDS</source>
-        <translation>Solde total incluant les MDS non confirmés et immatures</translation>
+        <source>Total Balance including unconfirmed and immature Midas</source>
+        <translation>Solde total incluant les Midas non confirmés et immatures</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2510,24 +2510,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>Show the current status of automatic MDS minting.
+        <source>Show the current status of automatic Midas minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to midas.conf
 - disable: add 'enablezeromint=0' to midas.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted MDS
+- menu Settings-&gt;Options-&gt;Percentage of autominted Midas
 
 </source>
-        <translation>Afficher l'état actuel de monnayage automatique MDS.
+        <translation>Afficher l'état actuel de monnayage automatique Midas.
 
 Pour changer le statut (redémarrage requis):
 - enable: ajoute 'enablezeromint = 1' au fichier midas.conf
 - disable: ajoute 'enablezeromint = 0' au fichier midas.conf
 
 Pour changer le pourcentage (pas de redémarrage requis):
-- menu Paramètres-&gt; Options-&gt; Pourcentage de MDS auto-monnayé
+- menu Paramètres-&gt; Options-&gt; Pourcentage de Midas auto-monnayé
 
 </translation>
     </message>
@@ -2724,12 +2724,12 @@ Maximum allowed: </source>
 Maximum autorisé:</translation>
     </message>
     <message>
-        <source>MDS Spend #: </source>
-        <translation>Dépense MDS #:</translation>
+        <source>Midas Spend #: </source>
+        <translation>Dépense Midas #:</translation>
     </message>
     <message>
-        <source>MDS Mint</source>
-        <translation>Monnayer MDS</translation>
+        <source>Midas Mint</source>
+        <translation>Monnayer Midas</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2744,12 +2744,12 @@ Maximum autorisé:</translation>
         <translation>Pourcentage cible configuré: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>MDS is currently disabled due to maintenance.</source>
-        <translation>MDS est actuellement désactivé pour cause de maintenance.</translation>
+        <source>Midas is currently disabled due to maintenance.</source>
+        <translation>Midas est actuellement désactivé pour cause de maintenance.</translation>
     </message>
     <message>
-        <source>MDS is currently undergoing maintenance.</source>
-        <translation>MDS est actuellement en cours de maintenance.</translation>
+        <source>Midas is currently undergoing maintenance.</source>
+        <translation>Midas est actuellement en cours de maintenance.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2836,8 +2836,8 @@ Maximum autorisé:</translation>
         <translation>Monnayez réussi</translation>
     </message>
     <message>
-        <source> MDS in </source>
-        <translation>MDS dans</translation>
+        <source> Midas in </source>
+        <translation>Midas dans</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2892,13 +2892,13 @@ Maximum autorisé:</translation>
         <translation>Confirmer l'envoi des pièces</translation>
     </message>
     <message>
-        <source>Version 1 MDS require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de MDS requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 Midas require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de Midas requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
-        <source>Failed to spend MDS</source>
-        <translation>Échec de la dépense de MDS</translation>
+        <source>Failed to spend Midas</source>
+        <translation>Échec de la dépense de Midas</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -3232,8 +3232,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
     </message>
     <message>
-        <source>Custom MDS Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde MDS personnalisé:</translation>
+        <source>Custom Midas Backup Path:</source>
+        <translation>Chemin du répertoire de sauvegarde Midas personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3676,8 +3676,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Taille UTXO:</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3776,8 +3776,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Ajouter un destinataire</translation>
     </message>
     <message>
-        <source>Anonymized MDS</source>
-        <translation>MDS anonymisé</translation>
+        <source>Anonymized Midas</source>
+        <translation>Midas anonymisé</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4152,40 +4152,40 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Reçu via Obfuscation</translation>
     </message>
     <message>
-        <source>MDS Stake</source>
-        <translation>MDS Stake</translation>
+        <source>Midas Stake</source>
+        <translation>Midas Stake</translation>
     </message>
     <message>
-        <source>MDS Stake</source>
-        <translation>MDS Stake</translation>
+        <source>Midas Stake</source>
+        <translation>Midas Stake</translation>
     </message>
     <message>
-        <source>Converted MDS to MDS</source>
-        <translation>MDS converti en MDS</translation>
+        <source>Converted Midas to Midas</source>
+        <translation>Midas converti en Midas</translation>
     </message>
     <message>
-        <source>Spent MDS</source>
-        <translation>MDS dépensés</translation>
+        <source>Spent Midas</source>
+        <translation>Midas dépensés</translation>
     </message>
     <message>
-        <source>Received MDS from zMDS</source>
-        <translation>MDS reçu depuis MDS</translation>
+        <source>Received Midas from zMidas</source>
+        <translation>Midas reçu depuis Midas</translation>
     </message>
     <message>
-        <source>Minted Change as MDS from MDS Spend</source>
-        <translation>Monnaie rendue à partir d'une dépense MDS frappée comme MDS </translation>
+        <source>Minted Change as Midas from Midas Spend</source>
+        <translation>Monnaie rendue à partir d'une dépense Midas frappée comme Midas </translation>
     </message>
     <message>
-        <source>Converted MDS to MDS</source>
-        <translation>MDS converti en MDS</translation>
+        <source>Converted Midas to Midas</source>
+        <translation>Midas converti en Midas</translation>
     </message>
     <message>
-        <source>Anonymous (MDS Transaction)</source>
-        <translation>Anonyme (transaction MDS)</translation>
+        <source>Anonymous (Midas Transaction)</source>
+        <translation>Anonyme (transaction Midas)</translation>
     </message>
     <message>
-        <source>Anonymous (MDS Stake)</source>
-        <translation>Anonyme (MDS Stake)</translation>
+        <source>Anonymous (Midas Stake)</source>
+        <translation>Anonyme (Midas Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4343,12 +4343,12 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Une erreur est survenue lors de la tentative de sauvegarde de l'historique de transaction vers %1.</translation>
     </message>
     <message>
-        <source>Received MDS from zMDS</source>
-        <translation>MDS reçu depuis MDS</translation>
+        <source>Received Midas from zMidas</source>
+        <translation>Midas reçu depuis Midas</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in MDS</source>
-        <translation>Dépense Zerocoin, monnaie rendue en MDS</translation>
+        <source>Zerocoin Spend, Change in Midas</source>
+        <translation>Dépense Zerocoin, monnaie rendue en Midas</translation>
     </message>
     </context>
 <context>
@@ -4398,19 +4398,19 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     </context>
 <context>
     <name>midas-core</name>
     <message>
-        <source>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées MDS (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées Midas (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées MDS (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées Midas (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -4880,8 +4880,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing MDS wallet...</source>
-        <translation>Synchronisation du portefeuille MDS ...</translation>
+        <source>Syncing Midas wallet...</source>
+        <translation>Synchronisation du portefeuille Midas ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5028,8 +5028,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of MDS</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de MDS</translation>
+        <source>Value is below the smallest available denomination (= 1) of Midas</source>
+        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de Midas</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -5044,8 +5044,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Vérification du portefeuille...</translation>
     </message>
     <message>
-        <source>Version 1 MDS require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de MDS requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 Midas require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de Midas requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>

@@ -20,7 +20,7 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MDS);
+    unitlist.append(Midas);
     unitlist.append(mMDS);
     unitlist.append(uMDS);
     return unitlist;
@@ -29,7 +29,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case MDS:
+    case Midas:
     case mMDS:
     case uMDS:
         return true;
@@ -41,7 +41,7 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case MDS:
+    case Midas:
         return QString("midas");
     case mMDS:
         return QString("mmidas");
@@ -56,18 +56,18 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case MDS:
-            return QString("MDS");
+        case Midas:
+            return QString("Midas");
         case mMDS:
             return QString("mMDS");
         case uMDS:
-            return QString::fromUtf8("μMDS");
+            return QString::fromUtf8("μMidas");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case MDS:
+        case Midas:
             return QString("tMDS");
         case mMDS:
             return QString("mtMDS");
@@ -83,18 +83,18 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case MDS:
-            return QString("MDS");
+        case Midas:
+            return QString("Midas");
         case mMDS:
-            return QString("Milli-MDS (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-Midas (1 / 1" THIN_SP_UTF8 "000)");
         case uMDS:
-            return QString("Micro-MDS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-Midas (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case MDS:
+        case Midas:
             return QString("TestMDSs");
         case mMDS:
             return QString("Milli-TestMDS (1 / 1" THIN_SP_UTF8 "000)");
@@ -109,7 +109,7 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case MDS:
+    case Midas:
         return 100000000;
     case mMDS:
         return 100000;
@@ -123,7 +123,7 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case MDS:
+    case Midas:
         return 8;
     case mMDS:
         return 5;

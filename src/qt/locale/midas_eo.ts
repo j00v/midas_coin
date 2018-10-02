@@ -184,7 +184,7 @@
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>&amp;Foliumi transakcio historio</translation>
     </message>
     <message>
-        <source>Privacy Actions for MDS</source>
-        <translation>Privataj agoj por MDS</translation>
+        <source>Privacy Actions for Midas</source>
+        <translation>Privataj agoj por Midas</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1561,8 +1561,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Adreso / Kvanto:</translation>
     </message>
     <message>
-        <source>Add destinations to send MDS to</source>
-        <translation>Aldonu destinoj por sendi MDS al</translation>
+        <source>Add destinations to send Midas to</source>
+        <translation>Aldonu destinoj por sendi Midas al</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1628,12 +1628,12 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Bonvolu elekti privata nivelo.</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
-        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 MDS por anonimigi 10000 MDS</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 Midas por anonimigi 10000 Midas</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
-        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 MDS por anonimigi 10000 MDS</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 Midas por anonimigi 10000 Midas</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1787,8 +1787,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS kvanto</translation>
+        <source>Midas Balance</source>
+        <translation>Midas kvanto</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1799,8 +1799,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Via aktuala Midas totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS kvanto</translation>
+        <source>Midas Balance</source>
+        <translation>Midas kvanto</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -1870,12 +1870,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1890,12 +1890,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Kvanto</translation>
     </message>
     <message>
-        <source>MDS Control</source>
-        <translation>MDS kontrolu</translation>
+        <source>Midas Control</source>
+        <translation>Midas kontrolu</translation>
     </message>
     <message>
-        <source>MDS Selected:</source>
-        <translation>Elektita MDS</translation>
+        <source>Midas Selected:</source>
+        <translation>Elektita Midas</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1906,12 +1906,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Elspezi zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending</source>
-        <translation>Havebla (matura kaj elspezebla) MDS por elspezi</translation>
+        <source>Available (mature and spendable) Midas for spending</source>
+        <translation>Havebla (matura kaj elspezebla) Midas por elspezi</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2297,8 +2297,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Se estas aktiva sed ŝanĝo-adreso estas malpleniĝa au nevalida, ŝanĝo sendos al nova generita adreson.</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -2655,8 +2655,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Is Spendable</source>

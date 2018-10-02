@@ -184,8 +184,8 @@
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MDS&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 MDS를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Midas&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 Midas를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>겨래내역 보기</translation>
     </message>
     <message>
-        <source>Privacy Actions for MDS</source>
-        <translation>MDS 생성 및 관리</translation>
+        <source>Privacy Actions for Midas</source>
+        <translation>Midas 생성 및 관리</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1681,8 +1681,8 @@ Please be patient after clicking import.</source>
         <translation>주소 / 금액:</translation>
     </message>
     <message>
-        <source>Add destinations to send MDS to</source>
-        <translation>MDS를 보낼 목적지 추가</translation>
+        <source>Add destinations to send Midas to</source>
+        <translation>Midas를 보낼 목적지 추가</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Please be patient after clicking import.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 MDS 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 Midas 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MDS</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 MDS 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 Midas</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 Midas 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MDS to anonymize 10000 MDS</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 MDS 익명화에 약 ~0.025 MDS의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 Midas to anonymize 10000 Midas</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 Midas 익명화에 약 ~0.025 Midas의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MDS to anonymize 10000 MDS</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 MDS 익명화에 약 0.05 MDS의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 Midas to anonymize 10000 Midas</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 Midas 익명화에 약 0.05 Midas의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 MDS per 10000 MDS you anonymize.</source>
-        <translation>10000 MDS 익명화에 0.1 MDS 가 듭니다.</translation>
+        <source>0.1 Midas per 10000 Midas you anonymize.</source>
+        <translation>10000 Midas 익명화에 0.1 Midas 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1948,28 +1948,28 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MDS units to MDS</source>
-        <translation>보상받은 MDS를 MDS로 자동변환 활성화</translation>
+        <source>Enable automatic minting of Midas units to Midas</source>
+        <translation>보상받은 Midas를 Midas로 자동변환 활성화</translation>
     </message>
     <message>
-        <source>Enable MDS Automint</source>
-        <translation>MDS 자동생성 활성화</translation>
+        <source>Enable Midas Automint</source>
+        <translation>Midas 자동생성 활성화</translation>
     </message>
     <message>
-        <source>Percentage of incoming MDS which get automatically converted to MDS via Zerocoin Protocol (min: 10%)</source>
-        <translation>MDS수신시 자동변환 MDS 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming Midas which get automatically converted to Midas via Zerocoin Protocol (min: 10%)</source>
+        <translation>Midas수신시 자동변환 Midas 비율 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted MDS</source>
-        <translation>자동 변환되는 MDS 비율</translation>
+        <source>Percentage of autominted Midas</source>
+        <translation>자동 변환되는 Midas 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough MDS for this denomination is available</source>
-        <translation>이 디노미네이션의 MDS가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough Midas for this denomination is available</source>
+        <translation>이 디노미네이션의 Midas가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint MDS Denomination</source>
-        <translation>선호하는 자동생성 MDS 디노미네이션 </translation>
+        <source>Preferred Automint Midas Denomination</source>
+        <translation>선호하는 자동생성 Midas 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>전체 잔액, (현재 전송이 불가능한 코인 포함)</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS 잔액</translation>
+        <source>Midas Balance</source>
+        <translation>Midas 잔액</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,14 +2159,14 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>현재 Midas 잔액, 미확정, 생성중인 코인 포함</translation>
     </message>
     <message>
-        <source>MDS Balance</source>
-        <translation>MDS 잔액</translation>
+        <source>Midas Balance</source>
+        <translation>Midas 잔액</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These MDS are spendable.</source>
+These Midas are spendable.</source>
         <translation>성숙한 : 그것이 발행 된 후 같은 명칭의 20 개 이상의 확인 및 1 개 민트.
-이 MDS는 쓸만합니다.</translation>
+이 Midas는 쓸만합니다.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2219,8 +2219,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Locked MDS or Masternode collaterals. These are excluded from MDS minting.</source>
-        <translation>잠금 MDS 또는 Masternode collaterals. 이들은 MDS minting에서 제외됩니다.</translation>
+        <source>Locked Midas or Masternode collaterals. These are excluded from Midas minting.</source>
+        <translation>잠금 Midas 또는 Masternode collaterals. 이들은 Midas minting에서 제외됩니다.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2231,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>미승인:</translation>
     </message>
     <message>
-        <source>Your current MDS balance, unconfirmed and immature MDS included.</source>
-        <translation>MDS 잔액, 미확정, 생성중인 MDS 포함.</translation>
+        <source>Your current Midas balance, unconfirmed and immature Midas included.</source>
+        <translation>Midas 잔액, 미확정, 생성중인 Midas 포함.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2243,10 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>동기화되지 않음</translation>
     </message>
     <message>
-        <source>Current percentage of MDS.
+        <source>Current percentage of Midas.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>현재 MDS의 백분율 .
+        <translation>현재 Midas의 백분율 .
 자동 저장 기능이 활성화 된 경우이 비율은 구성된 자동 저장 비율 (기본값 = 10 %)을 기준으로 정해집니다.</translation>
     </message>
     <message>
@@ -2389,8 +2389,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2401,8 +2401,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>생성 가능한 수량:</translation>
     </message>
     <message>
-        <source>0.000 000 00 MDS</source>
-        <translation>0.000 000 00 MDS</translation>
+        <source>0.000 000 00 Midas</source>
+        <translation>0.000 000 00 Midas</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2441,16 +2441,16 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>프라이버시</translation>
     </message>
     <message>
-        <source>Enter an amount of Mds to convert to MDS</source>
-        <translation>MDS로 변환할 MDS 수량을 입력하세요.</translation>
+        <source>Enter an amount of Mds to convert to Midas</source>
+        <translation>Midas로 변환할 Midas 수량을 입력하세요.</translation>
     </message>
     <message>
-        <source>MDS Control</source>
-        <translation>MDS 컨트롤</translation>
+        <source>Midas Control</source>
+        <translation>Midas 컨트롤</translation>
     </message>
     <message>
-        <source>MDS Selected:</source>
-        <translation>선택된 MDS :</translation>
+        <source>Midas Selected:</source>
+        <translation>선택된 Midas :</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2465,24 +2465,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in midas.conf
         <translation>제로코인 보내기</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending</source>
-        <translation>전송 가능한 MDS</translation>
+        <source>Available (mature and spendable) Midas for spending</source>
+        <translation>전송 가능한 Midas</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>가능한 잔액:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) MDS for spending
+        <source>Available (mature and spendable) Midas for spending
 
-MDS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>지출에 사용할 수있는 성숙한 소비재 MDS
+Midas are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>지출에 사용할 수있는 성숙한 소비재 Midas
 
-MDS는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이상의 민트가 작성되었을 때 성숙합니다.</translation>
+Midas는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이상의 민트가 작성되었을 때 성숙합니다.</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2502,7 +2502,7 @@ MDS는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이
     </message>
     <message>
         <source>The Midas address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>MDS를 전송할 Midas 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>Midas를 전송할 Midas 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2553,7 +2553,7 @@ MDS는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이
         <translation>제로코인 상태 :</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature MDS</source>
+        <source>Total Balance including unconfirmed and immature Midas</source>
         <translation>승인중이거나, 생성중인 제로코인도 포함된 전체 잔액입니다.</translation>
     </message>
     <message>
@@ -2575,24 +2575,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 미성숙 : 확인되었지만 발행 된 후 같은 종파 1 개 미만</translation>
     </message>
     <message>
-        <source>Show the current status of automatic MDS minting.
+        <source>Show the current status of automatic Midas minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to midas.conf
 - disable: add 'enablezeromint=0' to midas.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted MDS
+- menu Settings-&gt;Options-&gt;Percentage of autominted Midas
 
 </source>
-        <translation>현재 MDS 자동 생성 상태를 보여줍니다.
+        <translation>현재 Midas 자동 생성 상태를 보여줍니다.
 
 자동생성 상태를 변경하시려면 (지갑 재시작 필요함):
 - 활성화: 'enablezeromint=1' 를 midas.conf 파일에 추가
 - 비활성화: 'enablezeromint=0' 를 midas.conf 파일에 추가
 
 자동 생성 비율 변경하시려면 (지갑 재시작 필요없음):
-- 메뉴 설정-&gt;옵션-&gt;MDS 자동생성 비율
+- 메뉴 설정-&gt;옵션-&gt;Midas 자동생성 비율
 
 </translation>
     </message>
@@ -2789,12 +2789,12 @@ Maximum allowed: </source>
 가능한 최대값 :</translation>
     </message>
     <message>
-        <source>MDS Spend #: </source>
-        <translation>MDS 전송 # :</translation>
+        <source>Midas Spend #: </source>
+        <translation>Midas 전송 # :</translation>
     </message>
     <message>
-        <source>MDS Mint</source>
-        <translation>MDS 생성</translation>
+        <source>Midas Mint</source>
+        <translation>Midas 생성</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2809,12 +2809,12 @@ Maximum allowed: </source>
         <translation> 구성된 목표 비율 : &lt;b&gt;</translation>
     </message>
     <message>
-        <source>MDS is currently disabled due to maintenance.</source>
-        <translation>MDS는 현재 점검중이라 사용하실수 없습니다.</translation>
+        <source>Midas is currently disabled due to maintenance.</source>
+        <translation>Midas는 현재 점검중이라 사용하실수 없습니다.</translation>
     </message>
     <message>
-        <source>MDS is currently undergoing maintenance.</source>
-        <translation>MDS는 현재 점검중입니다.</translation>
+        <source>Midas is currently undergoing maintenance.</source>
+        <translation>Midas는 현재 점검중입니다.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2901,8 +2901,8 @@ Maximum allowed: </source>
         <translation>성공적으로 발행됨</translation>
     </message>
     <message>
-        <source> MDS in </source>
-        <translation> MDS in </translation>
+        <source> Midas in </source>
+        <translation> Midas in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2961,12 +2961,12 @@ Maximum allowed: </source>
         <translation>코인 전송 확인</translation>
     </message>
     <message>
-        <source>Version 1 MDS require a security level of 100 to successfully spend.</source>
-        <translation>MDS 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
+        <source>Version 1 Midas require a security level of 100 to successfully spend.</source>
+        <translation>Midas 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
     </message>
     <message>
-        <source>Failed to spend MDS</source>
-        <translation>MDS 전송 실패</translation>
+        <source>Failed to spend Midas</source>
+        <translation>Midas 전송 실패</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2987,7 +2987,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of MDS to convert to MDS</comment>
+        <comment>Enter an amount of Midas to convert to Midas</comment>
         <translation><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3304,8 +3304,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>맞춤 백업 경로 :</translation>
     </message>
     <message>
-        <source>Custom MDS Backup Path:</source>
-        <translation>맞춤 MDS 백업 경로 :</translation>
+        <source>Custom Midas Backup Path:</source>
+        <translation>맞춤 Midas 백업 경로 :</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3749,8 +3749,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 MDS</source>
-        <translation>0 MDS</translation>
+        <source>0 Midas</source>
+        <translation>0 Midas</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized MDS</source>
-        <translation>익명화된 MDS</translation>
+        <source>Anonymized Midas</source>
+        <translation>익명화된 Midas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4526,12 +4526,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화를 통해 수신 됨</translation>
     </message>
     <message>
-        <source>MDS Stake</source>
-        <translation>MDS stake</translation>
+        <source>Midas Stake</source>
+        <translation>Midas stake</translation>
     </message>
     <message>
-        <source>MDS Stake</source>
-        <translation>MDS stake</translation>
+        <source>Midas Stake</source>
+        <translation>Midas stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4550,32 +4550,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
-        <source>Converted MDS to MDS</source>
-        <translation>MDS를 MDS로 변환</translation>
+        <source>Converted Midas to Midas</source>
+        <translation>Midas를 Midas로 변환</translation>
     </message>
     <message>
-        <source>Spent MDS</source>
-        <translation>MDS 사용</translation>
+        <source>Spent Midas</source>
+        <translation>Midas 사용</translation>
     </message>
     <message>
-        <source>Received MDS from zMDS</source>
-        <translation>MDS를 MDS로 받음</translation>
+        <source>Received Midas from zMidas</source>
+        <translation>Midas를 Midas로 받음</translation>
     </message>
     <message>
-        <source>Minted Change as MDS from MDS Spend</source>
-        <translation>MDS 전송후 남은 MDS로 잔돈 생성</translation>
+        <source>Minted Change as Midas from Midas Spend</source>
+        <translation>Midas 전송후 남은 Midas로 잔돈 생성</translation>
     </message>
     <message>
-        <source>Converted MDS to MDS</source>
-        <translation>MDS를 MDS로 변환</translation>
+        <source>Converted Midas to Midas</source>
+        <translation>Midas를 Midas로 변환</translation>
     </message>
     <message>
-        <source>Anonymous (MDS Transaction)</source>
-        <translation>Anonymous (MDS 거래)</translation>
+        <source>Anonymous (Midas Transaction)</source>
+        <translation>Anonymous (Midas 거래)</translation>
     </message>
     <message>
-        <source>Anonymous (MDS Stake)</source>
-        <translation>Anonymous (MDS 스테이킹)</translation>
+        <source>Anonymous (Midas Stake)</source>
+        <translation>Anonymous (Midas 스테이킹)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4785,12 +4785,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>내보내기 성공</translation>
     </message>
     <message>
-        <source>Received MDS from zMDS</source>
-        <translation>MDS를 MDS로 받음</translation>
+        <source>Received Midas from zMidas</source>
+        <translation>Midas를 Midas로 받음</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in MDS</source>
-        <translation>제로코인 전송, 잔돈은 MDS</translation>
+        <source>Zerocoin Spend, Change in Midas</source>
+        <translation>제로코인 전송, 잔돈은 Midas</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 MDS.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 MDS로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 Midas.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 Midas로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4860,8 +4860,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZMdsControlDialog</name>
     <message>
-        <source>Select MDS to Spend</source>
-        <translation>사용할 MDS 선택</translation>
+        <source>Select Midas to Spend</source>
+        <translation>사용할 Midas 선택</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4872,8 +4872,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>MDS</source>
-        <translation>MDS</translation>
+        <source>Midas</source>
+        <translation>Midas</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4939,16 +4939,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each MDS minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each MDS minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each Midas minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each Midas minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for MDS inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for Midas inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4983,12 +4983,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in MDS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (MDS/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (Midas/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in MDS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (MDS/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in Midas/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (Midas/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MDS.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 MDS과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 Midas.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 Midas과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 MDS.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 MDS와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 Midas.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 Midas와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5411,8 +5411,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in MDS/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (MDS/kB) (기본값: %s)</translation>
+        <source>Fee (in Midas/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (Midas/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5540,11 +5540,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 MDS 비율  (1-100, default: %u)</translation>
+        <translation>자동생성 Midas 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MDS and MDS money supply statistics</source>
-        <translation>MDS 및 MDS 공급량 다시 색인</translation>
+        <source>Reindex the Midas and Midas money supply statistics</source>
+        <translation>Midas 및 Midas 공급량 다시 색인</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5619,8 +5619,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic MDS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic MDS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic Midas backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic Midas backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6119,8 +6119,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
-        <source>Syncing MDS wallet...</source>
-        <translation>MDS 지갑 동기화중...</translation>
+        <source>Syncing Midas wallet...</source>
+        <translation>Midas 지갑 동기화중...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6267,8 +6267,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of MDS</source>
-        <translation>Value is below the smallest available denomination (= 1) of MDS</translation>
+        <source>Value is below the smallest available denomination (= 1) of Midas</source>
+        <translation>Value is below the smallest available denomination (= 1) of Midas</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6283,8 +6283,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지갑 인증 중...</translation>
     </message>
     <message>
-        <source>Version 1 MDS require a security level of 100 to successfully spend.</source>
-        <translation>MDS 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
+        <source>Version 1 Midas require a security level of 100 to successfully spend.</source>
+        <translation>Midas 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -6328,7 +6328,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 MDS 가 부족합니다.</translation>
+        <translation>지갑에 Midas 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>

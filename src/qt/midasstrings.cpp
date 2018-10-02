@@ -58,12 +58,12 @@ QT_TRANSLATE_NOOP("midas-core", ""
 QT_TRANSLATE_NOOP("midas-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("midas-core", ""
-"Enable automatic wallet backups triggered after each MDS minting (0-1, "
+"Enable automatic wallet backups triggered after each Midas minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("midas-core", ""
-"Enable or disable staking functionality for MDS inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for Midas inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("midas-core", ""
-"Enable or disable staking functionality for MDS inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for Midas inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("midas-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("midas-core", ""
@@ -100,10 +100,10 @@ QT_TRANSLATE_NOOP("midas-core", ""
 QT_TRANSLATE_NOOP("midas-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("midas-core", ""
-"Fees (in MDS/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in Midas/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("midas-core", ""
-"Fees (in MDS/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in Midas/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("midas-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -171,7 +171,7 @@ QT_TRANSLATE_NOOP("midas-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("midas-core", ""
-"Specify custom backup path to add a copy of any automatic MDS backup. If "
+"Specify custom backup path to add a copy of any automatic Midas backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -197,10 +197,10 @@ QT_TRANSLATE_NOOP("midas-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("midas-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 MDS."),
+"transaction that are not equal 10000 Midas."),
 QT_TRANSLATE_NOOP("midas-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"MDS."),
+"Midas."),
 QT_TRANSLATE_NOOP("midas-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -321,7 +321,7 @@ QT_TRANSLATE_NOOP("midas-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("midas-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("midas-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("midas-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("midas-core", "Fee (in MDS/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("midas-core", "Fee (in Midas/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("midas-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("midas-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("midas-core", "Found enough users, signing ( waiting %s )"),
@@ -410,7 +410,7 @@ QT_TRANSLATE_NOOP("midas-core", "Randomly drop 1 of every <n> network messages")
 QT_TRANSLATE_NOOP("midas-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("midas-core", "Rebuild block chain index from current blk000??.dat files"),
 QT_TRANSLATE_NOOP("midas-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("midas-core", "Reindex the MDS and MDS money supply statistics"),
+QT_TRANSLATE_NOOP("midas-core", "Reindex the Midas and Midas money supply statistics"),
 QT_TRANSLATE_NOOP("midas-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("midas-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("midas-core", "Reindexing zerocoin failed"),
@@ -462,7 +462,7 @@ QT_TRANSLATE_NOOP("midas-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("midas-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("midas-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("midas-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("midas-core", "Syncing MDS wallet..."),
+QT_TRANSLATE_NOOP("midas-core", "Syncing Midas wallet..."),
 QT_TRANSLATE_NOOP("midas-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("midas-core", "The new spend coin transaction did not verify"),
 QT_TRANSLATE_NOOP("midas-core", "The selected mint coin is an invalid coin"),
@@ -499,11 +499,11 @@ QT_TRANSLATE_NOOP("midas-core", "Use UPnP to map the listening port (default: 1 
 QT_TRANSLATE_NOOP("midas-core", "Use a custom max chain reorganization depth (default: %u)"),
 QT_TRANSLATE_NOOP("midas-core", "Use the test network"),
 QT_TRANSLATE_NOOP("midas-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("midas-core", "Value is below the smallest available denomination (= 1) of MDS"),
+QT_TRANSLATE_NOOP("midas-core", "Value is below the smallest available denomination (= 1) of Midas"),
 QT_TRANSLATE_NOOP("midas-core", "Value more than Obfuscation pool maximum allows."),
 QT_TRANSLATE_NOOP("midas-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("midas-core", "Verifying wallet..."),
-QT_TRANSLATE_NOOP("midas-core", "Version 1 MDS require a security level of 100 to successfully spend."),
+QT_TRANSLATE_NOOP("midas-core", "Version 1 Midas require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("midas-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("midas-core", "Wallet is locked."),
 QT_TRANSLATE_NOOP("midas-core", "Wallet needed to be rewritten: restart Midas Core to complete"),

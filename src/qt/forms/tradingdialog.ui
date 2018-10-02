@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy MDS</string>
+      <string>Buy Midas</string>
      </property>
      <property name="icon">
       <iconset resource="../midas.qrc">
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>MDS</string>
+      <string>Midas</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,7 +1704,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>MDS</string>
+      <string>Midas</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="UnitsInputMDS">
@@ -1751,7 +1751,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell MDS</string>
+      <string>Sell Midas</string>
      </property>
      <property name="icon">
       <iconset resource="../midas">
@@ -1777,7 +1777,7 @@
          </font>
         </property>
         <property name="text">
-         <string>MDS Available:</string>
+         <string>Midas Available:</string>
         </property>
        </widget>
       </item>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>MDS</string>
+         <string>Midas</string>
         </property>
        </widget>
       </item>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MDS Balance:</string>
+      <string>Midas Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MDS Available:</string>
+      <string>Midas Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,7 +2832,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MDS Pending:</string>
+      <string>Midas Pending:</string>
      </property>
     </widget>
     <widget class="QLabel" name="MDSPendingLabel">
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex MDS Deposit Address:</string>
+      <string>Bittrex Midas Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
