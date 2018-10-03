@@ -54,10 +54,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000004cfe1adfaa8ef2cbe89e5e95775f943db44bb408cdd7d710cce661ad3ba"));
+    (0, uint256("0x0000052217d23419fb2e858b0861d2e2290858ef82b461fb6db92a54b290fa4e"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1538390941, // * UNIX timestamp of last checkpoint block
+    1538473500, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
@@ -67,7 +67,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1538390941,
+    1538473500,
     0,
     250};
 
@@ -75,7 +75,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1538390941,
+    1538473500,
     0,
     100};
 
@@ -164,15 +164,15 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1538390941;
+        genesis.nTime = 1538473500;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 279439;
+        genesis.nNonce = 1683128;
 
         hashGenesisBlock = genesis.GetHash();
         printf("hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
 		printf("hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
 		
-        assert(hashGenesisBlock == uint256("0x000004cfe1adfaa8ef2cbe89e5e95775f943db44bb408cdd7d710cce661ad3ba"));
+        assert(hashGenesisBlock == uint256("0x0000052217d23419fb2e858b0861d2e2290858ef82b461fb6db92a54b290fa4e"));
         assert(genesis.hashMerkleRoot == uint256("0x52ff0fa38c386c286eaf5777d3df6bebc156bc40dba484a4013f463a7ffb1ac9"));
 
         /* vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "midas.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
@@ -206,12 +206,12 @@ public:
         
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
@@ -325,7 +325,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = false;
-        fAllowMinDifficultyBlocks = true;
+        fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
