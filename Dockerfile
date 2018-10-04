@@ -15,6 +15,7 @@ RUN apt-get update && \
          libevent-dev \
          bsdmainutils \
          vim \
+         libgmp3-dev \
          software-properties-common && \
          rm -rf /var/lib/apt/lists/* && apt-get clean
 
@@ -30,21 +31,11 @@ WORKDIR /midas
 
 COPY . .
 
-RUN cd depends && \
-	make && \
-	make install && \
-	cd .. && \
-	./autogen.sh && \
-	./configure && \
-	make && \
-	strip ./midasd && \
-    strip ./midas-cli && \
-    mv ./midasd /usr/local/bin/ && \
-    mv ./midas-cli /usr/local/bin/ && \
-    rm -rf /midas 
+RUN /midas/contrib/build-docker.sh
 
 VOLUME ["/root/.midas"]
 
-EXPOSE 44444
+EXPOSE 22331
 
 CMD exec midasd && tail -f /root/.midas/debug.log
+ 
