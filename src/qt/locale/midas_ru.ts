@@ -5145,8 +5145,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(44444 could be used only on mainnet)</source>
-        <translation>(44444 можно использовать только в сети)</translation>
+        <source>(44433 could be used only on mainnet)</source>
+        <translation>(44433 можно использовать только в сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5157,8 +5157,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(неуплата: 1)</translation>
     </message>
     <message>
-        <source>(must be 44444 for mainnet)</source>
-        <translation>(должен быть 44444 для mainet)</translation>
+        <source>(must be 44433 for mainnet)</source>
+        <translation>(должен быть 44433 для mainet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

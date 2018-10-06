@@ -5146,8 +5146,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(44444 could be used only on mainnet)</source>
-        <translation>(44444 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(44433 could be used only on mainnet)</source>
+        <translation>(44433 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 44444 for mainnet)</source>
-        <translation>(moet 44444 voor mainnet zijn)</translation>
+        <source>(must be 44433 for mainnet)</source>
+        <translation>(moet 44433 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

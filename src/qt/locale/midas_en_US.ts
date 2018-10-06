@@ -4166,8 +4166,8 @@ for example: alertnotify=echo %%s | mail -s "Midas Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(44444 could be used only on mainnet)</source>
-        <translation>(44444 could be used only on mainnet)</translation>
+        <source>(44433 could be used only on mainnet)</source>
+        <translation>(44433 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4178,8 +4178,8 @@ for example: alertnotify=echo %%s | mail -s "Midas Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 44444 for mainnet)</source>
-        <translation>(must be 44444 for mainnet)</translation>
+        <source>(must be 44433 for mainnet)</source>
+        <translation>(must be 44433 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

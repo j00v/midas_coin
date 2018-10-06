@@ -192,7 +192,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         LogPrint("masternode","IsBlockValueValid() : WARNING: Couldn't find previous block\n");
     }
 
-    //LogPrintf("XX69----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
+    LogPrintf("XX69----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
 
     if (!masternodeSync.IsSynced()) { //there is no budget data to use to check anything
         //super blocks will always be on these blocks, max 100 per budgeting
@@ -343,10 +343,10 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
      if (devFee > 0){
         unsigned int i = txNew.vout.size();
         txNew.vout.resize(i + 1);
-        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("mRDFWmxssaNFNUDQEmodB3qc8rx5T4rHSN").Get());
+        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("mM2jZwXdeGySYutSz65Hst6vZqTs5jBGi1").Get());
         txNew.vout[i].nValue = devFee;
         LogPrint("devfee","Dev fee payment for %lld\n", devFee);
-    }
+     }
 }
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()

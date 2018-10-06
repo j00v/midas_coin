@@ -114,7 +114,7 @@ public:
         pchMessageStart[2] = 0x5f;
         pchMessageStart[3] = 0xde;
         vAlertPubKey = ParseHex("046c83c10a2137b7ed555c663aeac44628923bf53bed6fa2c26d86ed1323ded1794c37c2cae1b069d40e3258f31170dae0b2924bc38412194645ee4bd64b433358");
-        nDefaultPort = 44444;
+        nDefaultPort = 44433;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Midas starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 105000;
         nMaxReorganizationDepth = 100;

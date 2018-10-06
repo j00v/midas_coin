@@ -1818,9 +1818,9 @@ int64_t GetBlockValue(int nHeight)
 
     if (nHeight == 0) {
       nSubsidy = 100000 * COIN;
-    } else if (nHeight > 0 && nHeight <= 300) {
+    } else if (nHeight > 0 && nHeight < 300) {
       nSubsidy = 10 * CENT;
-    } else if (nHeight > 300 && nHeight <= 3500) {
+    } else if (nHeight >= 300 && nHeight <= 3500) {
       nSubsidy = 60 * CENT;
 	} else if (nHeight > 3500 && nHeight <= 6000) {
       nSubsidy = 240 * CENT;
@@ -1899,9 +1899,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-    if (nHeight > 0 && nHeight <= 300) {
+    if (nHeight > 0 && nHeight < 300) {
       ret = 40 * CENT;
-    } else if (nHeight > 300 && nHeight <= 3500) {
+    } else if (nHeight >= 300 && nHeight <= 3500) {
       ret = 240 * CENT;
 	} else if (nHeight > 3500 && nHeight <= 6000) {
       ret = 960 * CENT;
@@ -2908,9 +2908,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight) + 
 GetMasternodePayment(pindex->pprev->nHeight, 0, 0, true) + 
 GetDevFee(pindex->pprev->nHeight);
-    if (block.IsProofOfWork())
+    if (block.IsProofOfWork() && nFees > 0)
         nExpectedMint += nFees;
-
+	//LogPrint(" >> ConnectBlock(): minted=%s limit=%s", FormatMoney(pindex->nMint), FormatMoney(nExpectedMint));
     //Check that the block does not overmint
     if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",

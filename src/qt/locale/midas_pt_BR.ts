@@ -3728,8 +3728,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(44444 could be used only on mainnet)</source>
-        <translation>(44444 could be used only on mainnet)</translation>
+        <source>(44433 could be used only on mainnet)</source>
+        <translation>(44433 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3740,8 +3740,8 @@ https://www.transifex.com/midas-project/midas-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 44444 for mainnet)</source>
-        <translation>(deve ser 44444 para mainnet)</translation>
+        <source>(must be 44433 for mainnet)</source>
+        <translation>(deve ser 44433 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

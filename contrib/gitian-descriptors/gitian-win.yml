@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/hazzardt/midas.git"
+- "url": "http://185.22.62.50/biohazzardt/midas.git"
   "dir": "midas"
 files: []
 script: |

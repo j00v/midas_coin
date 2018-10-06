@@ -27,6 +27,7 @@ CMasternodeSync::CMasternodeSync()
 
 bool CMasternodeSync::IsSynced()
 {
+// 	return true;
     return RequestedMasternodeAssets == MASTERNODE_SYNC_FINISHED;
 }
 
@@ -53,7 +54,7 @@ bool CMasternodeSync::IsBlockchainSynced()
     if (pindex == NULL) return false;
 
 
-    if (pindex->nTime + 60 * 60 < GetTime())
+    if (pindex->nTime + 60 * 60 * 24 < GetTime())
         return false;
 
     fBlockchainSynced = true;

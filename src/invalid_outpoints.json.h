@@ -5035,7 +5035,7 @@ std::string LoadInvalidOutPoints()
             "    \"n\": 1\n"
             "  },\n"
             "  {\n"
-            "    \"txid\": \"c4861cc6ccdf538d44444ab422be8e2f33c4bade36f6847dcc8fc114d6d0e1c9\",\n"
+            "    \"txid\": \"c4861cc6ccdf538d39999ab422be8e2f33c4bade36f6847dcc8fc114d6d0e1c9\",\n"
             "    \"n\": 0\n"
             "  },\n"
             "  {\n"

@@ -603,7 +603,7 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
     if (devFee > 0){
         unsigned int i = txNew.vout.size();
         txNew.vout.resize(i + 1);
-        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("mRDFWmxssaNFNUDQEmodB3qc8rx5T4rHSN").Get());
+        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("mM2jZwXdeGySYutSz65Hst6vZqTs5jBGi1").Get());
         txNew.vout[i].nValue = devFee;
         LogPrint("devfee","Dev fee payment for %lld\n", devFee);
     }
