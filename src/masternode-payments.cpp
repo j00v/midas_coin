@@ -340,13 +340,14 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
     }
     
-     if (devFee > 0){
+    // Pay Dev Fee to wallet mM2jZwXdeGySYutSz65Hst6vZqTs5jBGi1
+    if (devFee > 0){
         unsigned int i = txNew.vout.size();
         txNew.vout.resize(i + 1);
-        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("mM2jZwXdeGySYutSz65Hst6vZqTs5jBGi1").Get());
+        txNew.vout[i].scriptPubKey = GetScriptForDestination(CBitcoinAddress("mM2jZwXdeGySYutSz65Hst6vZqTs5jBGi1").Get()); // Dev Fee wallet
         txNew.vout[i].nValue = devFee;
         LogPrint("devfee","Dev fee payment for %lld\n", devFee);
-     }
+    }
 }
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()

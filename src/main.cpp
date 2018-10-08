@@ -248,7 +248,7 @@ struct CNodeState {
         nBlocksInFlight = 0;
         fPreferredDownload = false;
     }
-};
+}; 
 
 /** Map maintaining per-node state. Requires cs_main. */
 map<NodeId, CNodeState> mapNodeState;
@@ -1804,6 +1804,7 @@ double ConvertBitsToDouble(unsigned int nBits)
         dDiff *= 256.0;
         nShift++;
     }
+    
     while (nShift > 29) {
         dDiff /= 256.0;
         nShift--;
@@ -1812,9 +1813,12 @@ double ConvertBitsToDouble(unsigned int nBits)
     return dDiff;
 }
 
+/**
+ * Get POW/POS Reward
+ * */
 int64_t GetBlockValue(int nHeight)
 {
-     int64_t nSubsidy = 2 * COIN;
+    int64_t nSubsidy = 2 * COIN;
 
     if (nHeight == 0) {
       nSubsidy = 100000 * COIN;
@@ -1847,7 +1851,9 @@ int64_t GetBlockValue(int nHeight)
     return nSubsidy;
 }
 
-
+/** 
+ * Get Dev Fee amount
+*/
 int64_t GetDevFee(int nHeight)
 {
     int64_t ret = 0;
@@ -1869,60 +1875,47 @@ int64_t GetDevFee(int nHeight)
     return ret;
 }
 
-
+/** 
+ * Not used
+ */
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
-    //if a mn count is inserted into the function we are looking for a specific result for a masternode count
-    if (nMasternodeCount < 1){
-        if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT))
-            nMasternodeCount = mnodeman.stable_size();
-        else
-            nMasternodeCount = mnodeman.size();
-    }
-
-    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-    int64_t mNodeCoins = nMasternodeCount * 1000 * COIN;
-
-    // Use this log to compare the masternode count for different clients
-    //LogPrintf("Adjusting seesaw at height %d with %d masternodes (without drift: %d) at %ld\n", nHeight, nMasternodeCount, nMasternodeCount - Params().MasternodeCountDrift(), GetTime());
-
-    if (fDebug)
-        LogPrintf("GetMasternodePayment(): moneysupply=%s, nodecoins=%s \n", FormatMoney(nMoneySupply).c_str(),
-                  FormatMoney(mNodeCoins).c_str());
-
     CAmount ret = 0;
     
     return ret;
 }
 
+/**
+ * Returns masternode winner reward
+ */
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isMDSStake)
 {
     int64_t ret = 0;
 
     if (nHeight > 0 && nHeight < 300) {
-      ret = 40 * CENT;
-    } else if (nHeight >= 300 && nHeight <= 4000) {
-      ret = 240 * CENT;
-	} else if (nHeight > 4000 && nHeight <= 7000) {
-      ret = 160 * CENT;
+        ret = 40 * CENT;
+    } else if (nHeight >= 300 && nHeight < 4000) {
+        ret = 240 * CENT;
+	} else if (nHeight >= 4000 && nHeight <= 7000) {
+        ret = 160 * CENT;
     } else if (nHeight > 7000 && nHeight <= 10000) {
-      ret = 1040 * CENT;
+        ret = 1040 * CENT;
     } else if (nHeight > 10000 && nHeight <= 20000) {
-      ret = 880 * CENT;
+        ret = 880 * CENT;
     } else if (nHeight > 20000 && nHeight <= 40000) {
-      ret = 720 * CENT;
+        ret = 720 * CENT;
     } else if (nHeight > 40000 && nHeight <= 100000) {
-      ret = 600 * CENT;
+        ret = 600 * CENT;
     } else if (nHeight > 100000 && nHeight <= 150000) {
-      ret = 525 * CENT;
+        ret = 525 * CENT;
     } else if (nHeight > 150000 && nHeight <= 200000) {
-      ret = 450 * CENT;
+        ret = 450 * CENT;
     } else if (nHeight > 200000 && nHeight <= 250000) {
-      ret = 375 * CENT;
+        ret = 375 * CENT;
 	} else if (nHeight > 250000 && nHeight <= 500000) {
-      ret = 300 * CENT;
+        ret = 300 * CENT;
     } else if (nHeight > 500000) {
-      ret = 225 * CENT;
+        ret = 225 * CENT;
     }
 
 
