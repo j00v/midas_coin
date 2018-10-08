@@ -122,8 +122,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Midas: 1 day
-        nTargetSpacing = 2 * 60;  // Midas: 2 minute
+        nTargetTimespan = 24 * 60 * 60; // Midas: 1 day
+        nTargetSpacing = 2 * 60;  // Midas: 2 minute // test
         nMaturity = 20;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 5000000 * COIN;
@@ -180,6 +180,9 @@ public:
         vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
         vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
+        
+
+
         */
 		
         vSeeds.push_back(CDNSSeedData("dnsseed1", "45.76.207.178"));
@@ -194,6 +197,9 @@ public:
         
         vSeeds.push_back(CDNSSeedData("dnsseed9", "66.42.73.107"));
         vSeeds.push_back(CDNSSeedData("dnsseed10", "104.238.136.127"));
+        vSeeds.push_back(CDNSSeedData("dnsseed11", "217.61.18.194"));
+        vSeeds.push_back(CDNSSeedData("dnsseed12", "95.216.154.7"));
+        vSeeds.push_back(CDNSSeedData("dnsseed13", "107.191.63.1"));
         // vSeeds.clear();
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 110);

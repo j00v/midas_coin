@@ -1820,28 +1820,28 @@ int64_t GetBlockValue(int nHeight)
       nSubsidy = 100000 * COIN;
     } else if (nHeight > 0 && nHeight < 300) {
       nSubsidy = 10 * CENT;
-    } else if (nHeight >= 300 && nHeight <= 3500) {
+    } else if (nHeight >= 300 && nHeight <= 4000) {
       nSubsidy = 60 * CENT;
-	} else if (nHeight > 3500 && nHeight <= 6000) {
-      nSubsidy = 240 * CENT;
-    } else if (nHeight > 6000 && nHeight <= 15000) {
-      nSubsidy = 200 * CENT;
-    } else if (nHeight > 15000 && nHeight <= 25000) {
-      nSubsidy = 180 * CENT;
-    } else if (nHeight > 25000 && nHeight <= 40000) {
-      nSubsidy = 160 * CENT;
-    } else if (nHeight > 40000 && nHeight <= 100000) {
-      nSubsidy = 140 * CENT;
-    } else if (nHeight > 100000 && nHeight <= 150000) {
-      nSubsidy = 120 * CENT;
-    } else if (nHeight > 150000 && nHeight <= 200000) {
-      nSubsidy = 100 * CENT;
-    } else if (nHeight > 200000 && nHeight <= 250000) {
-      nSubsidy = 80 * CENT;
-	} else if (nHeight > 250000 && nHeight <= 500000) {
-      nSubsidy = 60 * CENT;
-    } else if (nHeight > 500000) {
+	} else if (nHeight > 4000 && nHeight <= 7000) {
       nSubsidy = 40 * CENT;
+    } else if (nHeight > 7000 && nHeight <= 10000) {
+      nSubsidy = 260 * CENT;
+    } else if (nHeight > 10000 && nHeight <= 20000) {
+      nSubsidy = 220 * CENT;
+    } else if (nHeight > 20000 && nHeight <= 40000) {
+      nSubsidy = 180 * CENT;
+    } else if (nHeight > 40000 && nHeight <= 100000) {
+      nSubsidy = 160 * CENT;
+    } else if (nHeight > 100000 && nHeight <= 150000) {
+      nSubsidy = 140 * CENT;
+    } else if (nHeight > 150000 && nHeight <= 200000) {
+      nSubsidy = 120 * CENT;
+    } else if (nHeight > 200000 && nHeight <= 250000) {
+      nSubsidy = 100 * CENT;
+	} else if (nHeight > 250000 && nHeight <= 500000) {
+      nSubsidy = 80 * CENT;
+    } else if (nHeight > 500000) {
+      nSubsidy = 60 * CENT;
     }
 
     return nSubsidy;
@@ -1853,17 +1853,17 @@ int64_t GetDevFee(int nHeight)
     int64_t ret = 0;
 
     if (nHeight > 40000 && nHeight <= 100000) {
-      ret = 35 * CENT;
+      ret = 40 * CENT;
     } else if (nHeight > 100000 && nHeight <= 150000) {
-      ret = 30 * CENT;
+      ret = 35 * CENT;
     } else if (nHeight > 150000 && nHeight <= 200000) {
-      ret = 25 * CENT;
+      ret = 30 * CENT;
     } else if (nHeight > 200000 && nHeight <= 250000) {
-      ret = 20 * CENT;
+      ret = 25 * CENT;
     } else if (nHeight > 250000 && nHeight <= 500000) {
-      ret = 15 * CENT;
+      ret = 20 * CENT;
     } else if (nHeight > 500000) {
-      ret = 10 * CENT;
+      ret = 15 * CENT;
     }
 
     return ret;
@@ -1901,28 +1901,28 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
     if (nHeight > 0 && nHeight < 300) {
       ret = 40 * CENT;
-    } else if (nHeight >= 300 && nHeight <= 3500) {
+    } else if (nHeight >= 300 && nHeight <= 4000) {
       ret = 240 * CENT;
-	} else if (nHeight > 3500 && nHeight <= 6000) {
-      ret = 960 * CENT;
-    } else if (nHeight > 6000 && nHeight <= 15000) {
-      ret = 8 * COIN;
-    } else if (nHeight > 15000 && nHeight <= 25000) {
+	} else if (nHeight > 4000 && nHeight <= 7000) {
+      ret = 160 * CENT;
+    } else if (nHeight > 7000 && nHeight <= 10000) {
+      ret = 1040 * CENT;
+    } else if (nHeight > 10000 && nHeight <= 20000) {
+      ret = 880 * CENT;
+    } else if (nHeight > 20000 && nHeight <= 40000) {
       ret = 720 * CENT;
-    } else if (nHeight > 25000 && nHeight <= 40000) {
-      ret = 640 * CENT;
     } else if (nHeight > 40000 && nHeight <= 100000) {
-      ret = 525 * CENT;
+      ret = 600 * CENT;
     } else if (nHeight > 100000 && nHeight <= 150000) {
-      ret = 450 * CENT;
+      ret = 525 * CENT;
     } else if (nHeight > 150000 && nHeight <= 200000) {
-      ret = 375 * CENT;
+      ret = 450 * CENT;
     } else if (nHeight > 200000 && nHeight <= 250000) {
-      ret = 3 * COIN;
+      ret = 375 * CENT;
 	} else if (nHeight > 250000 && nHeight <= 500000) {
-      ret = 225 * CENT;
+      ret = 300 * CENT;
     } else if (nHeight > 500000) {
-      ret = 150 * CENT;
+      ret = 225 * CENT;
     }
 
 
