@@ -245,7 +245,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // Adjust bubble-help according to AutoMint settings
     QString automintHelp = tr("Current percentage of Midas.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
-    bool fEnableZeromint = GetBoolArg("-enablezeromint", false);
+    bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
@@ -297,7 +297,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showzMDSAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
     bool showzMDSUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
     bool showzMDSImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-	
+
     ui->labelzBalanceMature->setVisible(showzMDSAvailable);
     ui->labelzBalanceMatureText->setVisible(showzMDSAvailable);
     ui->labelzBalanceUnconfirmed->setVisible(showzMDSUnconfirmed);

@@ -85,11 +85,15 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             }
         }
 
-        parts.append(sub);
+        if(sub.credit != 0)
+            parts.append(sub);
+
     } else if (wtx.IsZerocoinSpend()) {
         //zerocoin spend outputs
         bool fFeeAssigned = false;
         for (const CTxOut& txout : wtx.vout) {
+            if (txout.nValue == 0)
+                continue;
             // change that was reminted as zerocoins
             if (txout.IsZerocoinMint()) {
                 // do not display record if this isn't from our wallet
@@ -175,7 +179,8 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     sub.type = TransactionRecord::Generated;
                 }
 
-                parts.append(sub);
+                if(txout.nValue != 0)
+                    parts.append(sub);
             }
         }
     } else {
@@ -244,8 +249,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
 
             sub.debit = -(nDebit - nChange);
             sub.credit = nCredit - nChange;
-            parts.append(sub);
-            parts.last().involvesWatchAddress = involvesWatchAddress; // maybe pass to TransactionRecord as constructor argument
+            if (sub.credit != 0) {
+                parts.append(sub);
+                parts.last().involvesWatchAddress = involvesWatchAddress; // maybe pass to TransactionRecord as constructor argument
+            }
         } else if (fAllFromMe || wtx.IsZerocoinMint()) {
             //
             // Debit
@@ -295,14 +302,15 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 }
                 sub.debit = -nValue;
 
-                parts.append(sub);
+                if (nValue != 0)
+                    parts.append(sub);
             }
         } else {
             //
             // Mixed debit transaction, can't break down payees
             //
-            parts.append(TransactionRecord(hash, nTime, TransactionRecord::Other, "", nNet, 0));
-            parts.last().involvesWatchAddress = involvesWatchAddress;
+            // parts.append(TransactionRecord(hash, nTime, TransactionRecord::Other, "", nNet, 0));
+            // parts.last().involvesWatchAddress = involvesWatchAddress;
         }
     }
 

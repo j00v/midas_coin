@@ -131,7 +131,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 300;
         nModifierUpdateBlock = 615800;
-        nZerocoinStartHeight = 863787;
+        nZerocoinStartHeight = 30000;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
@@ -171,7 +171,7 @@ public:
         hashGenesisBlock = genesis.GetHash();
         printf("hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
 		printf("hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
-		
+
         assert(hashGenesisBlock == uint256("0x00000d1c54783a9a44565a4c240f7136bea4ddb55f08ff8411482c28b3bafa95"));
         assert(genesis.hashMerkleRoot == uint256("0x08848e3b727dc280f5542aa778a7042ccf58093595f3030d82c5de73df4ccff8"));
 
@@ -180,28 +180,28 @@ public:
         vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
         vSeeds.push_back(CDNSSeedData("178.254.23.111", "178.254.23.111"));           // Single node address
-        
+
 
 
         */
-		
+
         vSeeds.push_back(CDNSSeedData("dnsseed1", "45.76.207.178"));
         vSeeds.push_back(CDNSSeedData("dnsseed2", "207.148.121.234"));
         vSeeds.push_back(CDNSSeedData("dnsseed3", "45.76.32.122"));
         vSeeds.push_back(CDNSSeedData("dnsseed4", "45.32.147.218"));
-        
+
         vSeeds.push_back(CDNSSeedData("dnsseed5", "209.250.236.152"));
         vSeeds.push_back(CDNSSeedData("dnsseed6", "207.148.83.18"));
         vSeeds.push_back(CDNSSeedData("dnsseed7", "95.179.139.29"));
         vSeeds.push_back(CDNSSeedData("dnsseed8", "45.32.92.37"));
-        
+
         vSeeds.push_back(CDNSSeedData("dnsseed9", "66.42.73.107"));
         vSeeds.push_back(CDNSSeedData("dnsseed10", "104.238.136.127"));
         vSeeds.push_back(CDNSSeedData("dnsseed11", "217.61.18.194"));
         vSeeds.push_back(CDNSSeedData("dnsseed12", "95.216.154.7"));
         vSeeds.push_back(CDNSSeedData("dnsseed13", "107.191.63.1"));
         // vSeeds.clear();
-		
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 110);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 38);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 138);
@@ -209,7 +209,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x25)(0x32).convert_to_container<std::vector<unsigned char> >();
         //  BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x90)(0x32)(0x00)(0x83).convert_to_container<std::vector<unsigned char> >();
-        
+
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = false;
@@ -305,17 +305,17 @@ public:
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "midas-testnet.seed2.fuzzbawls.pw"));
         vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
         vSeeds.push_back(CDNSSeedData("88.198.192.110", "88.198.192.110"));*/
-        
+
         vSeeds.push_back(CDNSSeedData("dnsseed1", "45.76.207.178"));
         vSeeds.push_back(CDNSSeedData("dnsseed2", "207.148.121.234"));
         vSeeds.push_back(CDNSSeedData("dnsseed3", "45.76.32.122"));
         vSeeds.push_back(CDNSSeedData("dnsseed4", "45.32.147.218"));
-        
+
         vSeeds.push_back(CDNSSeedData("dnsseed5", "209.250.236.152"));
         vSeeds.push_back(CDNSSeedData("dnsseed6", "207.148.83.18"));
         vSeeds.push_back(CDNSSeedData("dnsseed7", "95.179.139.29"));
         vSeeds.push_back(CDNSSeedData("dnsseed8", "45.32.92.37"));
-        
+
         vSeeds.push_back(CDNSSeedData("dnsseed9", "66.42.73.107"));
         vSeeds.push_back(CDNSSeedData("dnsseed10", "104.238.136.127"));
         // vSeeds.clear();
