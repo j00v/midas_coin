@@ -8,11 +8,11 @@
 #include "transactionrecord.h"
 
 #include "base58.h"
+#include "mdschain.h"
 #include "obfuscation.h"
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet.h"
-#include "mdschain.h"
 
 #include <stdint.h>
 
@@ -75,7 +75,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         } else {
             //Masternode reward
             CTxDestination destMN;
-            int nIndexMN = wtx.vout.size() - 1;
+            int nIndexMN = wtx.vout.size() > 2 ? 2 : wtx.vout.size() - 1;
             if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && IsMine(*wallet, destMN)) {
                 isminetype mine = wallet->IsMine(wtx.vout[nIndexMN]);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
@@ -85,7 +85,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             }
         }
 
-        if(sub.credit != 0)
+        if (sub.credit != 0)
             parts.append(sub);
 
     } else if (wtx.IsZerocoinSpend()) {
@@ -179,7 +179,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     sub.type = TransactionRecord::Generated;
                 }
 
-                if(txout.nValue != 0)
+                if (txout.nValue != 0)
                     parts.append(sub);
             }
         }
@@ -280,7 +280,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     // Sent to Midas Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = CBitcoinAddress(address).ToString();
-                } else if (txout.IsZerocoinMint()){
+                } else if (txout.IsZerocoinMint()) {
                     sub.type = TransactionRecord::ZerocoinMint;
                     sub.address = mapValue["zerocoinmint"];
                     sub.credit += txout.nValue;
@@ -320,15 +320,15 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
 bool IsMDSType(TransactionRecord::Type type)
 {
     switch (type) {
-        case TransactionRecord::StakeMDS:
-        case TransactionRecord::ZerocoinMint:
-        case TransactionRecord::ZerocoinSpend:
-        case TransactionRecord::RecvFromZerocoinSpend:
-        case TransactionRecord::ZerocoinSpend_Change_Mds:
-        case TransactionRecord::ZerocoinSpend_FromMe:
-            return true;
-        default:
-            return false;
+    case TransactionRecord::StakeMDS:
+    case TransactionRecord::ZerocoinMint:
+    case TransactionRecord::ZerocoinSpend:
+    case TransactionRecord::RecvFromZerocoinSpend:
+    case TransactionRecord::ZerocoinSpend_Change_Mds:
+    case TransactionRecord::ZerocoinSpend_FromMe:
+        return true;
+    default:
+        return false;
     }
 }
 
