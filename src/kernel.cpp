@@ -23,12 +23,17 @@ bool fTestNet = false; //Params().NetworkID() == CBaseChainParams::TESTNET;
 // Set to 3-hour for production network and 20-minute for test network
 unsigned int nModifierInterval;
 int nStakeTargetSpacing = 60 * 2;
+
 unsigned int getIntervalVersion(bool fTestNet)
 {
     if (fTestNet)
         return MODIFIER_INTERVAL_TESTNET;
-    else
-        return MODIFIER_INTERVAL;
+    else {
+		if (chainActive.Height() > LIMIT_POS_FORK_HEIGHT)
+            return MODIFIER_INTERVAL_ENFORCE;
+        else
+			return MODIFIER_INTERVAL;
+	}
 }
 
 // Hard checkpoints of stake modifiers to ensure they are deterministic

@@ -2093,6 +2093,12 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
             //make sure not to outrun target amount
             if (nAmountSelected + out.tx->vout[out.i].nValue > nTargetAmount)
                 continue;
+                
+			//check for minimal stake input after fork
+			if (chainActive.Height() > LIMIT_POS_FORK_HEIGHT) {
+				if (out.tx->vout[out.i].nValue < Params().StakeInputMinimal())
+					continue;
+			}            
 
             //if zerocoinspend, then use the block time
             int64_t nTxTime = out.tx->GetTxTime();

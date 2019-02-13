@@ -127,6 +127,7 @@ public:
         nMaturity = 20;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 5000000 * COIN;
+        nStakeInputMinimal = 20 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 300;
@@ -169,8 +170,8 @@ public:
         genesis.nNonce = 888019;
 
         hashGenesisBlock = genesis.GetHash();
-        printf("hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
-		printf("hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
+        //printf("hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
+		//printf("hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
 
         assert(hashGenesisBlock == uint256("0x00000d1c54783a9a44565a4c240f7136bea4ddb55f08ff8411482c28b3bafa95"));
         assert(genesis.hashMerkleRoot == uint256("0x08848e3b727dc280f5542aa778a7042ccf58093595f3030d82c5de73df4ccff8"));
@@ -290,13 +291,14 @@ public:
         nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
         nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1522454400; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
+        nStakeInputMinimal = 20 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1454124731;
         genesis.nNonce = 2402015;
 
         hashGenesisBlock = genesis.GetHash();
-        printf("testnet: hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
+        //printf("testnet: hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
         assert(hashGenesisBlock == uint256("0x2b206383510620f92ca0ee864b4419b8059c6574165dd070bd3a1924babe875c"));
 
         vFixedSeeds.clear();
@@ -378,9 +380,10 @@ public:
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 12345;
+        nStakeInputMinimal = 20 * COIN;
 
         hashGenesisBlock = genesis.GetHash();
-        printf("regtest: hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
+        //printf("regtest: hashGenesisBlock = %s\n",hashGenesisBlock.ToString().c_str());
         nDefaultPort = 44442;
         assert(hashGenesisBlock == uint256("0x77211018896d029616dcd7da8dd6096ef0ca0b620223f6efff25409814f953f0"));
 
