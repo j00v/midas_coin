@@ -3935,7 +3935,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     	else
             return state.DoS(100, error("CheckBlock() : stake failed to find block index"));
 
-        if (pindex->nHeight > LIMIT_POS_FORK_HEIGHT+10) { //postpone minimal stake check to 10 blocks after fork
+        if (pindex->nHeight > FORK_FIX_HEIGHT+10) { //postpone minimal stake check to 10 blocks after fork
             if (!GetTransaction(block.vtx[1].vin[0].prevout.hash, txPrev, hashBlockPrev, true))
       			    return state.DoS(100, error("CheckBlock() : stake failed to find vin transaction"));
       			    
@@ -6329,9 +6329,14 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-	
-if(chainActive.Height() >= LIMIT_POS_FORK_HEIGHT)
+int nHeight = chainActive.Height();
+
+if(nHeight >= LIMIT_POS_FORK_HEIGHT) {
+	if(nHeight >= FORK_FIX_HEIGHT)
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+	else
+		return MIN_PEER_PROTO_VERSION_AFTER_POS_ENFORCEMENT;
+}
     else
 		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }

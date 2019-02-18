@@ -186,18 +186,18 @@ public:
 
         */
 
-        vSeeds.push_back(CDNSSeedData("dnsseed1", "45.76.207.178"));
-        vSeeds.push_back(CDNSSeedData("dnsseed2", "207.148.121.234"));
-        vSeeds.push_back(CDNSSeedData("dnsseed3", "45.76.32.122"));
-        vSeeds.push_back(CDNSSeedData("dnsseed4", "45.32.147.218"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed1", "45.76.207.178"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed2", "207.148.121.234"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed3", "45.76.32.122"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed4", "45.32.147.218"));
 
-        vSeeds.push_back(CDNSSeedData("dnsseed5", "209.250.236.152"));
-        vSeeds.push_back(CDNSSeedData("dnsseed6", "207.148.83.18"));
-        vSeeds.push_back(CDNSSeedData("dnsseed7", "95.179.139.29"));
-        vSeeds.push_back(CDNSSeedData("dnsseed8", "45.32.92.37"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed5", "209.250.236.152"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed6", "207.148.83.18"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed7", "95.179.139.29"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed8", "45.32.92.37"));
 
-        vSeeds.push_back(CDNSSeedData("dnsseed9", "66.42.73.107"));
-        vSeeds.push_back(CDNSSeedData("dnsseed10", "104.238.136.127"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed9", "66.42.73.107"));
+        //vSeeds.push_back(CDNSSeedData("dnsseed10", "104.238.136.127"));
         vSeeds.push_back(CDNSSeedData("dnsseed11", "217.61.18.194"));
         vSeeds.push_back(CDNSSeedData("dnsseed12", "95.216.154.7"));
         vSeeds.push_back(CDNSSeedData("dnsseed13", "107.191.63.1"));
