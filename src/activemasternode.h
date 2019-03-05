@@ -68,6 +68,8 @@ public:
 
     /// Enable cold wallet mode (run a Masternode with no funds)
     bool EnableHotColdMasterNode(CTxIn& vin, CService& addr);
+    
+    static int GetMasternodeProtocol();
 };
 
 #endif

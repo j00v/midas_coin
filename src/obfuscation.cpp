@@ -2107,12 +2107,19 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
 {
     CScript payee2;
     payee2 = GetScriptForDestination(pubkey.GetID());
+    
+    int nHeight = chainActive.Tip()->nHeight;
+    CAmount mnActivateAmount, mnActivateSurvive;
+    
+    mnActivateAmount = CMasternodeBroadcast::GetMasternodeCollateralToActivate(nHeight);
+    mnActivateSurvive = CMasternodeBroadcast::GetMasternodeCollateralToSurvive(nHeight);
+
 
     CTransaction txVin;
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         BOOST_FOREACH (CTxOut out, txVin.vout) {
-            if (out.nValue == 1000 * COIN) {
+            if (out.nValue == mnActivateSurvive) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }

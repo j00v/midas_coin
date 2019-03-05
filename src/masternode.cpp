@@ -215,9 +215,14 @@ void CMasternode::Check(bool forceCheck)
     }
 
     if (!unitTest) {
+        int nHeight = chainActive.Tip()->nHeight;
+	    CAmount mnActivateSurvive;
+	    
+	    mnActivateSurvive = CMasternodeBroadcast::GetMasternodeCollateralToSurvive(nHeight);
+
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(999.99 * COIN, obfuScationPool.collateralPubKey);
+        CTxOut vout = CTxOut(mnActivateSurvive - 0.01 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
@@ -331,6 +336,25 @@ bool CMasternode::IsValidNetAddr()
            (IsReachable(addr) && addr.IsRoutable());
 }
 
+#define MASTERNODE_COLLATERAL (1000 * COIN)
+#define MASTERNODE_COLLATERAL_NEW (2500 * COIN)
+
+CAmount CMasternodeBroadcast::GetMasternodeCollateralToActivate(int nHeight)
+{
+	if(nHeight >= 110000)
+		return MASTERNODE_COLLATERAL_NEW;
+	else
+		return MASTERNODE_COLLATERAL;
+}
+
+CAmount CMasternodeBroadcast::GetMasternodeCollateralToSurvive(int nHeight)
+{
+	if(nHeight >= 110000)
+		return MASTERNODE_COLLATERAL_NEW;
+	else
+		return MASTERNODE_COLLATERAL;
+}
+
 CMasternodeBroadcast::CMasternodeBroadcast()
 {
     vin = CTxIn();
@@ -442,7 +466,7 @@ bool CMasternodeBroadcast::Create(CTxIn txin, CService service, CKey keyCollater
         return false;
     }
 
-    mnbRet = CMasternodeBroadcast(service, txin, pubKeyCollateralAddressNew, pubKeyMasternodeNew, PROTOCOL_VERSION);
+    mnbRet = CMasternodeBroadcast(service, txin, pubKeyCollateralAddressNew, pubKeyMasternodeNew, CActiveMasternode::GetMasternodeProtocol());
 
     if (!mnbRet.IsValidNetAddr()) {
         strErrorRet = strprintf("Invalid IP address %s, masternode=%s", mnbRet.addr.ToStringIP (), txin.prevout.hash.ToString());
@@ -585,9 +609,14 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
             mnodeman.Remove(pmn->vin);
     }
 
+	int nHeight = chainActive.Tip()->nHeight;
+    CAmount mnActivateSurvive;
+    
+    mnActivateSurvive = CMasternodeBroadcast::GetMasternodeCollateralToSurvive(nHeight);
+
     CValidationState state;
     CMutableTransaction tx = CMutableTransaction();
-    CTxOut vout = CTxOut(999.99 * COIN, obfuScationPool.collateralPubKey);
+    CTxOut vout = CTxOut(mnActivateSurvive - 0.01 * COIN, obfuScationPool.collateralPubKey);
     tx.vin.push_back(vin);
     tx.vout.push_back(vout);
 
@@ -638,7 +667,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
     mnodeman.Add(mn);
 
     // if it matches our Masternode privkey, then we've been remotely activated
-    if (pubKeyMasternode == activeMasternode.pubKeyMasternode && protocolVersion == PROTOCOL_VERSION) {
+    if (pubKeyMasternode == activeMasternode.pubKeyMasternode && protocolVersion >= MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT) {
         activeMasternode.EnableHotColdMasterNode(vin, addr);
     }
 

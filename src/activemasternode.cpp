@@ -12,6 +12,16 @@
 #include "protocol.h"
 #include "spork.h"
 
+int CActiveMasternode::GetMasternodeProtocol()
+{
+	int nHeight = chainActive.Tip()->nHeight;
+	
+	if(nHeight < FORK_HEIGHT)
+		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT; //return compatible protocol version before fork
+	else
+		return PROTOCOL_VERSION;  //return actual protocol versionafter fork heigh
+}
+
 //
 // Bootup the Masternode, look for a 1000 Midas input and register on the network
 //
@@ -37,7 +47,8 @@ void CActiveMasternode::ManageStatus()
         pmn = mnodeman.Find(pubKeyMasternode);
         if (pmn != NULL) {
             pmn->Check();
-            if (pmn->IsEnabled() && pmn->protocolVersion == PROTOCOL_VERSION) EnableHotColdMasterNode(pmn->vin, pmn->addr);
+            //if (pmn->IsEnabled() && pmn->protocolVersion == PROTOCOL_VERSION) EnableHotColdMasterNode(pmn->vin, pmn->addr);
+            if (pmn->IsEnabled() && pmn->protocolVersion >= MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT) EnableHotColdMasterNode(pmn->vin, pmn->addr);
         }
     }
 
@@ -287,7 +298,7 @@ bool CActiveMasternode::CreateBroadcast(CTxIn vin, CService service, CKey keyCol
         return false;
     }
 
-    mnb = CMasternodeBroadcast(service, vin, pubKeyCollateralAddress, pubKeyMasternode, PROTOCOL_VERSION);
+    mnb = CMasternodeBroadcast(service, vin, pubKeyCollateralAddress, pubKeyMasternode, CActiveMasternode::GetMasternodeProtocol());
     mnb.lastPing = mnp;
     if (!mnb.Sign(keyCollateralAddress)) {
         errorMessage = strprintf("Failed to sign broadcast, vin: %s", vin.ToString());
@@ -312,7 +323,7 @@ bool CActiveMasternode::CreateBroadcast(CTxIn vin, CService service, CKey keyCol
     std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
     std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
 
-    std::string strMessage = service.ToString() + boost::lexical_cast<std::string>(masterNodeSignatureTime) + vchPubKey + vchPubKey2 + boost::lexical_cast<std::string>(PROTOCOL_VERSION) + donationAddress + boost::lexical_cast<std::string>(donationPercantage);
+    std::string strMessage = service.ToString() + boost::lexical_cast<std::string>(masterNodeSignatureTime) + vchPubKey + vchPubKey2 + boost::lexical_cast<std::string>(CActiveMasternode::GetMasternodeProtocol()) + donationAddress + boost::lexical_cast<std::string>(donationPercantage);
 
     if (!obfuScationSigner.SignMessage(strMessage, retErrorMessage, vchMasterNodeSignature, keyCollateralAddress)) {
         errorMessage = "dsee sign message failed: " + retErrorMessage;
@@ -328,7 +339,7 @@ bool CActiveMasternode::CreateBroadcast(CTxIn vin, CService service, CKey keyCol
 
     LOCK(cs_vNodes);
     BOOST_FOREACH (CNode* pnode, vNodes)
-        pnode->PushMessage("dsee", vin, service, vchMasterNodeSignature, masterNodeSignatureTime, pubKeyCollateralAddress, pubKeyMasternode, -1, -1, masterNodeSignatureTime, PROTOCOL_VERSION, donationAddress, donationPercantage);
+        pnode->PushMessage("dsee", vin, service, vchMasterNodeSignature, masterNodeSignatureTime, pubKeyCollateralAddress, pubKeyMasternode, -1, -1, masterNodeSignatureTime, CActiveMasternode::GetMasternodeProtocol(), donationAddress, donationPercantage);
 
     /*
      * END OF "REMOVE"
@@ -454,10 +465,17 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
         BOOST_FOREACH (COutPoint outpoint, confLockedCoins)
             pwalletMain->LockCoin(outpoint);
     }
+    
+    //check what is allowed masternode collateral now
+    int nHeight = chainActive.Tip()->nHeight;
+    CAmount mnActivateAmount, mnActivateSurvive;
+    
+    mnActivateAmount = CMasternodeBroadcast::GetMasternodeCollateralToActivate(nHeight);
+    mnActivateSurvive = CMasternodeBroadcast::GetMasternodeCollateralToSurvive(nHeight);
 
     // Filter
     BOOST_FOREACH (const COutput& out, vCoins) {
-        if (out.tx->vout[out.i].nValue == 1000 * COIN) { //exactly
+        if (out.tx->vout[out.i].nValue == mnActivateAmount || out.tx->vout[out.i].nValue == mnActivateSurvive) { //exactly
             filteredCoins.push_back(out);
         }
     }

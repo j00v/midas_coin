@@ -1926,6 +1926,13 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
 {
     vCoins.clear();
 
+    int nHeight = chainActive.Tip()->nHeight;
+    CAmount mnActivateAmount, mnActivateSurvive;
+    
+    mnActivateAmount = CMasternodeBroadcast::GetMasternodeCollateralToActivate(nHeight);
+    mnActivateSurvive = CMasternodeBroadcast::GetMasternodeCollateralToSurvive(nHeight);
+
+
     {
         LOCK2(cs_main, cs_wallet);
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it) {
@@ -1956,13 +1963,13 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 if (nCoinType == ONLY_DENOMINATED) {
                     found = IsDenominatedAmount(pcoin->vout[i].nValue);
                 } else if (nCoinType == ONLY_NOT1000IFMN) {
-                    found = !(fMasterNode && pcoin->vout[i].nValue == 1000 * COIN);
+                    found = !(fMasterNode && pcoin->vout[i].nValue == mnActivateAmount);
                 } else if (nCoinType == ONLY_NONDENOMINATED_NOT1000IFMN) {
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
-                    if (found && fMasterNode) found = pcoin->vout[i].nValue != 1000 * COIN; // do not use Hot MN funds
+                    if (found && fMasterNode) found = pcoin->vout[i].nValue != mnActivateAmount; // do not use Hot MN funds
                 } else if (nCoinType == ONLY_1000) {
-                    found = pcoin->vout[i].nValue == 1000 * COIN;
+                    found = pcoin->vout[i].nValue == mnActivateAmount;
                 } else {
                     found = true;
                 }

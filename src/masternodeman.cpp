@@ -985,9 +985,14 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         // make sure it's still unspent
         //  - this is checked later by .check() in many places and by ThreadCheckObfuScationPool()
 
+        int nHeight = chainActive.Tip()->nHeight;
+	    CAmount mnActivateSurvive;
+	    
+	    mnActivateSurvive = CMasternodeBroadcast::GetMasternodeCollateralToSurvive(nHeight);
+
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(999.99 * COIN, obfuScationPool.collateralPubKey);
+        CTxOut vout = CTxOut(mnActivateSurvive - 0.01 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 

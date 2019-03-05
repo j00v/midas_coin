@@ -1817,10 +1817,15 @@ double ConvertBitsToDouble(unsigned int nBits)
 /**
  * Get POW/POS Reward
  * */
+ 
+ #if FORK_HEIGHT <= 100000 || FORK_HEIGHT >= 130000
+ #error Fork height is not correct, please fix!
+ #endif
+ 
 int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 2 * COIN;
-
+    
     if (nHeight == 0) {
       nSubsidy = 100000 * COIN;
     } else if (nHeight > 0 && nHeight < 300) {
@@ -1837,18 +1842,30 @@ int64_t GetBlockValue(int nHeight)
       nSubsidy = 180 * CENT;
     } else if (nHeight >= 40000 && nHeight < 100000) {
       nSubsidy = 160 * CENT;
-    } else if (nHeight >= 100000 && nHeight < 150000) {
+    } else if (nHeight >= 100000 && nHeight < FORK_HEIGHT) {
       nSubsidy = 140 * CENT;
-    } else if (nHeight >= 150000 && nHeight < 200000) {
-      nSubsidy = 120 * CENT;
-    } else if (nHeight >= 200000 && nHeight < 250000) {
-      nSubsidy = 100 * CENT;
-	} else if (nHeight >= 250000 && nHeight < 500000) {
-      nSubsidy = 80 * CENT;
-    } else if (nHeight >= 500000) {
+    } else if (nHeight >= FORK_HEIGHT && nHeight < 130000) {
       nSubsidy = 60 * CENT;
+    } else if (nHeight >= 130000 && nHeight < 150000) {
+      nSubsidy = 55 * CENT;
+    } else if (nHeight >= 150000 && nHeight < 200000) {
+      nSubsidy = 50 * CENT;
+    } else if (nHeight >= 200000 && nHeight < 250000) {
+      nSubsidy = 45 * CENT;
+    } else if (nHeight >= 250000 && nHeight < 500000) {
+      nSubsidy = 40 * CENT;
+    } else if (nHeight >= 500000 && nHeight < 750000) {
+      nSubsidy = 30 * CENT;
+    } else if (nHeight >= 750000 && nHeight < 2500000) {
+      nSubsidy = 20 * CENT;
+    } else if(nHeight >= 2500000) {
+        int nMul = (nHeight-2500000)/1250000;
+        if(nMul < 32)
+			nSubsidy = (20 / pow(2,nMul)) * CENT;
+		else
+			nSubsidy = 0.1 * CENT; //down to zero
     }
-
+ 
     return nSubsidy;
 }
 
@@ -1861,16 +1878,28 @@ int64_t GetDevFee(int nHeight)
 
     if (nHeight >= 40000 && nHeight < 100000) {
       ret = 40 * CENT;
-    } else if (nHeight >= 100000 && nHeight < 150000) {
+    } else if (nHeight >= 100000 && nHeight < FORK_HEIGHT) {
       ret = 35 * CENT;
-    } else if (nHeight >= 150000 && nHeight < 200000) {
-      ret = 30 * CENT;
-    } else if (nHeight >= 200000 && nHeight < 250000) {
-      ret = 25 * CENT;
-    } else if (nHeight >= 250000 && nHeight < 500000) {
-      ret = 20 * CENT;
-    } else if (nHeight >= 500000) {
+    } else if (nHeight >= FORK_HEIGHT && nHeight < 130000) {
       ret = 15 * CENT;
+    } else if (nHeight >= 130000 && nHeight < 150000) {
+      ret = 13.75 * CENT;
+    } else if (nHeight >= 150000 && nHeight < 200000) {
+      ret = 12.5 * CENT;
+    } else if (nHeight >= 200000 && nHeight < 250000) {
+      ret = 11.25 * CENT;
+    } else if (nHeight >= 250000 && nHeight < 500000) {
+      ret = 10 * CENT;
+    } else if (nHeight >= 500000 && nHeight < 750000) {
+      ret = 7.5 * CENT;
+    } else if (nHeight >= 750000 && nHeight < 2500000) {
+      ret = 5 * CENT;
+    } else if(nHeight >= 2500000) {
+        int nMul = (nHeight-2500000)/1250000;
+        if(nMul < 32)
+			ret = (5 / pow(2,nMul)) * CENT;
+		else
+			ret = 0.1 * CENT; //down to zero
     }
 
     return ret;
@@ -1907,16 +1936,28 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         ret = 720 * CENT;
     } else if (nHeight >= 40000 && nHeight < 100000) {
         ret = 600 * CENT;
-    } else if (nHeight >= 100000 && nHeight < 150000) {
-        ret = 525 * CENT;
+    } else if (nHeight >= 100000 && nHeight < FORK_HEIGHT) {
+      ret = 525 * CENT;
+    } else if (nHeight >= FORK_HEIGHT && nHeight < 130000) {
+      ret = 225 * CENT;
+    } else if (nHeight >= 130000 && nHeight < 150000) {
+      ret = 206.25 * CENT;
     } else if (nHeight >= 150000 && nHeight < 200000) {
-        ret = 450 * CENT;
+      ret = 187.5 * CENT;
     } else if (nHeight >= 200000 && nHeight < 250000) {
-        ret = 375 * CENT;
-	} else if (nHeight >= 250000 && nHeight < 500000) {
-        ret = 300 * CENT;
-    } else if (nHeight >= 500000) {
-        ret = 225 * CENT;
+      ret = 168.75 * CENT;
+    } else if (nHeight >= 250000 && nHeight < 500000) {
+      ret = 150 * CENT;
+    } else if (nHeight >= 500000 && nHeight < 750000) {
+      ret = 112.5 * CENT;
+    } else if (nHeight >= 750000 && nHeight < 2500000) {
+      ret = 75 * CENT;
+    } else if(nHeight >= 2500000) {
+        int nMul = (nHeight-2500000)/1250000;
+        if(nMul < 32)
+			ret = (75 / pow(2,nMul)) * CENT;
+		else
+			ret = 0.1 * CENT; //down to zero
     }
 
 
@@ -6331,13 +6372,9 @@ int ActiveProtocol()
 {
 int nHeight = chainActive.Height();
 
-if(nHeight >= LIMIT_POS_FORK_HEIGHT) {
-	if(nHeight >= FORK_FIX_HEIGHT)
-        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+	if(nHeight >= FORK_HEIGHT)
+		return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 	else
-		return MIN_PEER_PROTO_VERSION_AFTER_POS_ENFORCEMENT;
-}
-    else
 		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 

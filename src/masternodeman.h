@@ -18,6 +18,8 @@
 #define MASTERNODES_DUMP_SECONDS (15 * 60)
 #define MASTERNODES_DSEG_SECONDS (3 * 60 * 60)
 
+#define FORK_HEIGHT 111000
+
 using namespace std;
 
 class CMasternodeMan;
