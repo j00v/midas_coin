@@ -349,7 +349,7 @@ CAmount CMasternodeBroadcast::GetMasternodeCollateralToActivate(int nHeight)
 
 CAmount CMasternodeBroadcast::GetMasternodeCollateralToSurvive(int nHeight)
 {
-	if(nHeight >= 110000)
+	if(nHeight >= FORK_HEIGHT)
 		return MASTERNODE_COLLATERAL_NEW;
 	else
 		return MASTERNODE_COLLATERAL;
